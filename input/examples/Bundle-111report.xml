@@ -159,6 +159,11 @@
                         <!-- Reference to Encounter -->
                         <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9"/>
                     </entry>
+                    <entry>
+                        <!-- Reference to ReferralRequest -->
+                        <reference value="urn:uuid:972c7c13-0910-43da-9a3b-b90416036269"/>
+                    </entry>
+
                 </section>
                 <!-- Patient Demographics -->
                 <section>
@@ -556,6 +561,45 @@
         </resource>
     </entry>
     <entry>
+        <fullUrl value="urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036"/>
+        <resource>
+            <Organization>
+                <id value="4d7c758f-55c7-41f1-961f-4ccd1ed9d036"/>
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+                    <value value="EM396"/>
+                </identifier>
+                <name value="Medway Kent Out of Hours Clinic"/>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf"/>
+        <resource>
+            <Organization>
+                <id value="a0ff2363-f00d-4542-9f6a-624e71513ebf"/>
+                <meta>
+                    <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+                </meta>
+                <identifier>
+                    <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+                    <value value="PRA123"/>
+                </identifier>
+                <name value="Thames Medical Practice"/>
+                <address>
+                    <line>Thames Medical Practice</line>
+                    <line>Hill Street Branch Surgery</line>
+                    <city>Medway</city>
+                    <district>Essex</district>
+                    <postalCode>ME4 5TT</postalCode>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
         <fullUrl value="urn:uuid:eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce"/>
         <resource>
             <Consent>
@@ -570,6 +614,37 @@
                     <display value="Consent given for electronic record sharing"/>
                 </purpose>
             </Consent>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:972c7c13-0910-43da-9a3b-b90416036269"/>
+        <resource>
+            <ReferralRequest>
+                <id value="972c7c13-0910-43da-9a3b-b90416036269"/>
+                <status value="active"/>
+                <intent value="proposal"/>
+                <subject>
+                    <reference value="urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"/>
+                </subject>
+                <priority value="urgent"/>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="397593002"/>
+                        <display value="Referral by Accident and Emergency"/>
+                    </coding>
+                </type>
+                <requester>
+                    <agent><reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"/>
+                    </agent>
+                </requester>
+                <recipient>
+                    <reference value="urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036"/>
+                </recipient>
+                <recipient>
+                    <reference value="urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf"/>
+                </recipient>
+            </ReferralRequest>
         </resource>
     </entry>
 </Bundle>
