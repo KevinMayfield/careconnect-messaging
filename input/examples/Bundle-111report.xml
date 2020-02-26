@@ -407,8 +407,12 @@
             <Encounter>
                 <id value="9a20cb92-354a-4015-82ec-ab0252efc5b9"/>
                 <identifier>
-                    <system value="https://tools.ietf.org/html/rfc4122"/>
-                    <value value="ff84120c-43fe-4059-8839-dad2c4f9869c"/>
+                    <system value="https://fhir.medway.nhs.uk/case-id"/>
+                    <value value="CASEID123"/>
+                </identifier>
+                <identifier>
+                    <system value="https://fhir.medway.nhs.uk/case-reference"/>
+                    <value value="CASEREF1234"/>
                 </identifier>
                 <status value="finished"/>
                 <class>
@@ -432,6 +436,9 @@
                     <end value="2011-05-19T19:45:00+00:00"/>
                     <end value="2011-05-19T20:15:00+00:00"/>
                 </period>
+                <location>
+                    <location><reference value="urn:uuid:060b292b-a861-455d-b5e6-85f852dd32fc"/> </location>
+                </location>
                 <hospitalization>
                     <!--Category or kind of location after discharge-->
                     <dischargeDisposition>
@@ -645,6 +652,26 @@
                     <reference value="urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf"/>
                 </recipient>
             </ReferralRequest>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:060b292b-a861-455d-b5e6-85f852dd32fc"/>
+        <resource>
+            <Location>
+                <id value="060b292b-a861-455d-b5e6-85f852dd32fc"/>
+                <status value="active"/>
+                <address>
+                    <line>2, Brancaster Road</line>
+                    <city>Medway</city>
+                    <postalCode>ME5 FL5</postalCode>
+                    <country>GB</country>l
+                </address>
+                <description value="Follow the high street and turn left by Boots" />
+                <position>
+                    <longitude>+38.265789</longitude>
+                    <latitude>85.623415</latitude>
+                </position>
+            </Location>
         </resource>
     </entry>
 </Bundle>
