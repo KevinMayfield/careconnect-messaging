@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir">
-    <id value="111-report"/>
+    <id value="ambulance-request"/>
     <meta>
         <lastUpdated value="2015-02-12T21:00:00+00:00"/>
         <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1"/>
     </meta>
     <identifier>
         <system value="https://tools.ietf.org/html/rfc4122"/>
-        <value value="8c12c37b-1d65-43fc-b4d3-5bf81b54d7f5"/>
+        <value value="d4f26ca0-7f20-42af-8e32-1e8f8c808e5f"/>
     </identifier>
     <type value="document"/>
     <!--Emergency Care Composition-->
     <entry>
-        <fullUrl value="urn:uuid:926253f1-c43e-4194-81b5-8ba76c924175"/>
+        <fullUrl value="urn:uuid:80d6ed85-b313-4e6f-a4f1-a42643651b5c"/>
         <resource>
             <!--A resource carrying a set of healthcare-related information about the patient-->
             <Composition>
-                <id value="926253f1-c43e-4194-81b5-8ba76c924175"/>
+                <id value="80d6ed85-b313-4e6f-a4f1-a42643651b5c"/>
                 <meta>
                     <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-ECD-Composition-1"/>
                 </meta>
@@ -38,36 +38,35 @@
  The status is a marker for the clinical standing of the document.-->
                 <status value="final"/>
                 <type>
-                    <!--Discharge Summary document type-->
                     <coding>
                         <system value="http://snomed.info/sct"/>
-                        <code value="819551000000100" />
-                        <display value="National Health Service 111 Report"/>
+                        <code value="828801000000101" />
+                        <display value="NHS 111 Final Ambulance Request"/>
                     </coding>
                 </type>
                 <!--Reference to the patient subject of the Composition-->
                 <subject>
-                    <reference value="urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"/>
+                    <reference value="urn:uuid:7a1c845c-e930-42e4-b25f-801b9af3e5e9"/>
                 </subject>
                 <!--Reference to the clinical encounter or type of care this documentation is associated with.-->
                 <encounter>
-                    <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9"/>
+                    <reference value="urn:uuid:498f47b8-8ae1-48c5-9dc1-c5d3b9eb0ab7"/>
                 </encounter>
                 <!--The composition editing time, when the composition was last logically changed by the author.-->
                 <date value="2011-05-11T20:00:00+00:00"/>
                 <!--Identifies who is responsible for the information in the composition, 
  not necessarily who typed it in-->
                 <author>
-                    <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"/>
+                    <reference value="urn:uuid:2a1022dd-a998-41a1-9941-71a413ee9172"/>
                 </author>
-                <title value="National Health Service 111 Report"/>
+                <title value="NHS 111 Final Ambulance Request"/>
                 <!--Identifies the organization responsible for ongoing maintenance of and 
  access to the composition/document information.-->
                 <custodian>
-                    <reference value="urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc"/>
+                    <reference value="urn:uuid:1a513009-ec68-4ee8-b279-4cad6545c6ec"/>
                 </custodian>
                 <section>
-                    <title value="NHS 111 Report"/>
+                    <title value="NHS 111 Final Ambulance Request"/>
                     <code>
                         <coding>
                             <system value="http://snomed.info/sct"/>
@@ -157,11 +156,11 @@
                     </text>
                     <entry>
                         <!-- Reference to Encounter -->
-                        <reference value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9"/>
+                        <reference value="urn:uuid:498f47b8-8ae1-48c5-9dc1-c5d3b9eb0ab7"/>
                     </entry>
                     <entry>
                         <!-- Reference to ReferralRequest -->
-                        <reference value="urn:uuid:972c7c13-0910-43da-9a3b-b90416036269"/>
+                        <reference value="urn:uuid:5885c08d-e1c9-43ff-ae1b-aedb38067908"/>
                     </entry>
 
                 </section>
@@ -271,7 +270,7 @@
                     </text>
                     <!--Reference to Patient-->
                     <entry>
-                        <reference value="urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"/>
+                        <reference value="urn:uuid:7a1c845c-e930-42e4-b25f-801b9af3e5e9"/>
                     </entry>
                 </section>
                 <!--Attendance details-->
@@ -306,7 +305,7 @@
                         </div>
                     </text>
                     <entry>
-                        <reference value="urn:uuid:eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce"/>
+                        <reference value="urn:uuid:679091ff-f273-40fc-a560-44594b6454eb"/>
                     </entry>
                 </section>
                 <!--Clinical narrative-->
@@ -339,44 +338,7 @@
                     <text>
                         <status value="additional"/>
                         <div xmlns="http://www.w3.org/1999/xhtml">
-                            <span class="bold">Disposition:</span>
-                            <br></br>
-                            Go to the nearest Emergency Department within 4 hours.
-                            <br></br>
-                            <span class="bold">Selected care service:</span>
-                            <br></br>
-                            Dx009
-                            <br></br>
-                            <span class="bold">Pathways Assessment:</span>
-                            <br></br>
-                            An injury or other health problem was described.
-                            <br></br>The individual was described as breathing and conscious.
-                            <br></br>Loss of at least a mugful of blood in the last 30 minutes was not described.
-                            <br></br>An illness or other health problem was described. - Insect Bite
-                            <br></br>Fighting for breath was not described.
-                            <br></br>A heart attack, chest/upper back pain, recent probable stroke, recent fit/seizure
-                            or suicide attempt was not described as the main call reason.
-                            <br></br>New confusion, a diabetic hypo, a probable allergic reaction or successful resuscitation
-                            was not described as being the main call reason.
-                            <br></br>The individual was described as being warm to touch.
-                            <br></br>An insect or spider bite or sting was described. - Tick Bite
-                            <br></br>A sting/bite occurring within the last hour was not described.
-                            <br></br>10 or more stings were not described.
-                            <br></br>Nausea or vomiting since the sting was not described.
-                            <br></br>A sting involving the eyes or mouth was not described.
-                            <br></br>A fever was not described.
-                            <br></br>An insect still attached to the skin was described.
-                            <br></br>A tick bite was described.
-                            <br></br>
-
-                            <span class="bold">Advice given:</span>
-                            <br></br>
-                            Remove any jewellery or tight clothing from the area.
-                            <br></br>Antihistamine medication and creams help reduce swelling and itching. They can be
-                            bought from pharmacies. Talk to the pharmacist for advice. Follow the instructions
-                            in the pack.
-                            <br></br>Unless advised not to, or they have already been given, paracetamol or ibuprofen can
-                            be used to relieve pain. Follow the instructions in the pack. If in doubt ask a pharmacist.
+                            Patient: Joe Bloggs Disposition: Go to the nearest Emergency Department within 4 hours. Selected care service: Dx009 Pathways Assessment: An injury or other health problem was described. The individual was described as breathing and conscious. Loss of at least a mugful of blood in the last 30 minutes was not described. An illness or other health problem was described. - Insect Bite Fighting for breath was not described. A heart attack, chest/upper back pain, recent probable stroke, recent fit/seizure or suicide attempt was not described as the main call reason. New confusion, a diabetic hypo, a probable allergic reaction or successful resuscitation was not described as being the main call reason. The individual was described as being warm to touch. An insect or spider bite or sting was described. - Tick Bite A sting/bite occurring within the last hour was not described. 10 or more stings were not described. Nausea or vomiting since the sting was not described. A sting involving the eyes or mouth was not described. A fever was not described. An insect still attached to the skin was described. A tick bite was described. Advice given: Remove any jewellery or tight clothing from the area. Antihistamine medication and creams help reduce swelling and itching. They can be bought from pharmacies. Talk to the pharmacist for advice. Follow the instructions in the pack. Unless advised not to, or they have already been given, paracetamol or ibuprofen can be used to relieve pain. Follow the instructions in the pack. If in doubt ask a pharmacist.
                         </div>
                     </text>
                 </section>
@@ -401,11 +363,11 @@
     </entry>
     <!--Encounter Example 1-->
     <entry>
-        <fullUrl value="urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9"/>
+        <fullUrl value="urn:uuid:498f47b8-8ae1-48c5-9dc1-c5d3b9eb0ab7"/>
         <resource>
             <!--Encounter resource providing context for the discharge-->
             <Encounter>
-                <id value="9a20cb92-354a-4015-82ec-ab0252efc5b9"/>
+                <id value="498f47b8-8ae1-48c5-9dc1-c5d3b9eb0ab7"/>
                 <identifier>
                     <system value="https://fhir.medway.nhs.uk/case-id"/>
                     <value value="CASEID123"/>
@@ -430,14 +392,14 @@
                 </type>
                 <!--Reference to the patient as the subject of the Encounter-->
                 <subject>
-                    <reference value="urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"/>
+                    <reference value="urn:uuid:7a1c845c-e930-42e4-b25f-801b9af3e5e9"/>
                 </subject>
                 <period>
                     <end value="2011-05-19T19:45:00+00:00"/>
                     <end value="2011-05-19T20:15:00+00:00"/>
                 </period>
                 <location>
-                    <location><reference value="urn:uuid:060b292b-a861-455d-b5e6-85f852dd32fc"/> </location>
+                    <location><reference value="urn:uuid:6200f9ee-4d77-4d0f-8da1-b0bc4db0000d"/> </location>
                 </location>
                 <hospitalization>
                     <!--Category or kind of location after discharge-->
@@ -453,10 +415,10 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"/>
+        <fullUrl value="urn:uuid:7a1c845c-e930-42e4-b25f-801b9af3e5e9"/>
         <resource>
             <Patient>
-                <id value="6438cfe6-8012-4ec4-b83d-a680f8a41674"/>
+                <id value="7a1c845c-e930-42e4-b25f-801b9af3e5e9"/>
                 <meta>
                     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
                 </meta>
@@ -471,42 +433,45 @@
                         </valueCodeableConcept>
                     </extension>
                     <system value="https://fhir.nhs.uk/Id/nhs-number"/>
-                    <value value="993254128"/>
+                    <value value="5689098431"/>
                 </identifier>
                 <name>
                     <use value="official"/>
-                    <family value="Blogg"/>
-                    <given value="Joe"/>
+                    <family value="Assington"/>
+                    <given value="Jack"/>
                     <prefix value="Mr"/>
                 </name>
                 <gender value="male"/>
-                <birthDate value="1989-01-01"/>
+                <birthDate value="1976-01-08"/>
                 <telecom>
                     <use value="home" />
                     <system value="phone"/>
-                    <value value="01634775667"/>
-                </telecom>
-                <telecom>
-                    <use value="home" />
-                    <system value="email"/>
-                    <value value="Joe.Blogg@emailfree.co.uk"/>
+                    <value value="0765478574"/>
                 </telecom>
                 <address>
-                    <line value="17, County Way"/>
-                    <line value="Woodtown"/>
-                    <city value="Medway"/>
+                    <line value="7 Lime Avenue"/>
+                    <city value="Chelmsford"/>
+                    <district value="Essex"/>
                     <postalCode value="ME5 FS3"/>
                 </address>
                 <contact>
                     <name>
                         <use value="usual"/>
-                        <family value="Blogg"/>
-                        <given value="Helga"/>
+                        <family value="Wiggins"/>
+                        <given value="Perry"/>
                     </name>
-                    <gender value="female"/>
+                    <relationship>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0131"/>
+                            <code value="C"/>
+                            <display value="Emergency Contact"/>
+                        </coding>
+                    </relationship>
+                    <gender value="male"/>
                     <telecom>
                         <system value="phone"/>
-                        <value value="07886554123"/>
+                        <use value="temp"/>
+                        <value value="076651234567"/>
                     </telecom>
                     <address>
                         <line value="43 Summers Avenue"/>
@@ -520,10 +485,10 @@
     </entry>
     <!--Practitioner-Example-1-->
     <entry>
-        <fullUrl value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"/>
+        <fullUrl value="urn:uuid:2a1022dd-a998-41a1-9941-71a413ee9172"/>
         <resource>
             <Practitioner>
-                <id value="369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"/>
+                <id value="2a1022dd-a998-41a1-9941-71a413ee9172"/>
                 <meta>
                     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
                 </meta>
@@ -535,27 +500,27 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:d9174bf6-0662-4ae1-b39a-f9fec278835d"/>
+        <fullUrl value="urn:uuid:2e8d26d7-1447-4e0e-a03e-3ab9897cd0ad"/>
         <resource>
             <PractitionerRole>
-                <id value="d9174bf6-0662-4ae1-b39a-f9fec278835d"/>
+                <id value="2e8d26d7-1447-4e0e-a03e-3ab9897cd0ad"/>
                 <meta>
                     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"/>
                 </meta>
                 <practitioner>
-                    <reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"/>
+                    <reference value="urn:uuid:2a1022dd-a998-41a1-9941-71a413ee9172"/>
                 </practitioner>
                 <organization>
-                    <reference value="urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc"/>
+                    <reference value="urn:uuid:1a513009-ec68-4ee8-b279-4cad6545c6ec"/>
                 </organization>
             </PractitionerRole>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc"/>
+        <fullUrl value="urn:uuid:1a513009-ec68-4ee8-b279-4cad6545c6ec"/>
         <resource>
             <Organization>
-                <id value="120633ae-1a20-4e0e-b807-b78fb59679cc"/>
+                <id value="1a513009-ec68-4ee8-b279-4cad6545c6ec"/>
                 <meta>
                     <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
                 </meta>
@@ -577,9 +542,9 @@
                 </meta>
                 <identifier>
                     <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-                    <value value="EM396"/>
+                    <value value="AMB123"/>
                 </identifier>
-                <name value="Medway Kent Out of Hours Clinic"/>
+                <name value="East Chelmsford Ambulance Service"/>
             </Organization>
         </resource>
     </entry>
@@ -593,27 +558,27 @@
                 </meta>
                 <identifier>
                     <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
-                    <value value="PRA123"/>
+                    <value value="SUR556"/>
                 </identifier>
-                <name value="Thames Medical Practice"/>
+                <name value="The Surgery"/>
                 <address>
-                    <line>Thames Medical Practice</line>
-                    <line>Hill Street Branch Surgery</line>
-                    <city>Medway</city>
+                    <line>The Surgery</line>
+                    <line>Surgery Lane</line>
+                    <city>Chelmsford</city>
                     <district>Essex</district>
-                    <postalCode>ME4 5TT</postalCode>
+                    <postalCode>EX5 4EE</postalCode>
                 </address>
             </Organization>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce"/>
+        <fullUrl value="urn:uuid:679091ff-f273-40fc-a560-44594b6454eb"/>
         <resource>
             <Consent>
-                <id value="eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce"/>
+                <id value="679091ff-f273-40fc-a560-44594b6454eb"/>
                 <status value="active"/>
                 <patient>
-                    <reference value="urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"/>
+                    <reference value="urn:uuid:7a1c845c-e930-42e4-b25f-801b9af3e5e9"/>
                 </patient>
                 <purpose>
                     <system value="http://snomed.info/sct"/>
@@ -624,14 +589,14 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:972c7c13-0910-43da-9a3b-b90416036269"/>
+        <fullUrl value="urn:uuid:5885c08d-e1c9-43ff-ae1b-aedb38067908"/>
         <resource>
             <ReferralRequest>
-                <id value="972c7c13-0910-43da-9a3b-b90416036269"/>
+                <id value="5885c08d-e1c9-43ff-ae1b-aedb38067908"/>
                 <status value="active"/>
                 <intent value="proposal"/>
                 <subject>
-                    <reference value="urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"/>
+                    <reference value="urn:uuid:7a1c845c-e930-42e4-b25f-801b9af3e5e9"/>
                 </subject>
                 <priority value="urgent"/>
                 <type>
@@ -642,35 +607,29 @@
                     </coding>
                 </type>
                 <requester>
-                    <agent><reference value="urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"/>
+                    <agent><reference value="urn:uuid:2a1022dd-a998-41a1-9941-71a413ee9172"/>
                     </agent>
                 </requester>
                 <recipient>
                     <reference value="urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036"/>
-                </recipient>
-                <recipient>
-                    <reference value="urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf"/>
+                    <display value="East Chelmsford Ambulance Service"/>
                 </recipient>
             </ReferralRequest>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="urn:uuid:060b292b-a861-455d-b5e6-85f852dd32fc"/>
+        <fullUrl value="urn:uuid:6200f9ee-4d77-4d0f-8da1-b0bc4db0000d"/>
         <resource>
             <Location>
-                <id value="060b292b-a861-455d-b5e6-85f852dd32fc"/>
+                <id value="6200f9ee-4d77-4d0f-8da1-b0bc4db0000d"/>
                 <status value="active"/>
                 <address>
-                    <line>2, Brancaster Road</line>
-                    <city>Medway</city>
-                    <postalCode>ME5 FL5</postalCode>
-                    <country>GB</country>l
+                    <line>7 Lime Avenue</line>
+                    <city>Chelmsford</city>
+                    <postalCode>CH3 4HU</postalCode>
+                    <country>GB</country>
                 </address>
-                <description value="Follow the high street and turn left by Boots" />
-                <position>
-                    <longitude>+38.265789</longitude>
-                    <latitude>85.623415</latitude>
-                </position>
+                <description value="The actual location is in the garden, round the back of the house" />
             </Location>
         </resource>
     </entry>
