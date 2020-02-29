@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>CARECONNECT-MESSAGING-STU3\HL7 v2 and FHIR Admission, Discharge and Transfers - FHIR v3.0.2</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+     
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+  
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+  
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body>
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span><br/>3.0.0 - CI Build</p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+    
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+    
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/STU3/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul class="nav navbar-nav">
+  <li><a href="index.html">Care Connect Messaging</a></li>
+  <!-- <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">MyIg Background<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Backaground</a>
+      </li>
+    </ul>
+  </li> -->
+ <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="hl7v2tofhir.html">HL7v2 to FHIR Conversion</a>
+      </li>
+        <li>
+            <a href="adt.html">Admission, Discharge and Transfers</a>
+        </li>
+        <li>
+            <a href="orders.html">Orders</a>
+        </li>
+        <li>
+            <a href="results.html">Results</a>
+        </li>
+    </ul>
+  </li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts<b class="caret">
+        </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="messagedefinitions.html">Message Definitions</a>
+            </li>
+            <li>
+                <a href="graphdefinitions.html">Graph Definitions</a>
+            </li>
+            <li>
+                <a href="examples.html">Examples</a>
+            </li>
+        </ul>
+    </li>
+  <li><a href="downloads.html">Associated Specifications</a></li>
+  <li><a href="artifacts.html">Artifact Summary</a></li>
+</ul>      
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->  
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>HL7 v2 and FHIR Admission, Discharge and Transfers</b></li>
+        </ul>  
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+    
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Care Connect Messaging - Local Development build (v3.0.0). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>HL7 v2 and FHIR Admission, Discharge and Transfers</h2>
+  
+  
+  
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#notification-admit-patient" id="markdown-toc-notification-admit-patient">Notification Admit Patient</a></li>
+  <li><a href="#notification-discharge-patient" id="markdown-toc-notification-discharge-patient">Notification Discharge Patient</a></li>
+  <li><a href="#create-new-patient" id="markdown-toc-create-new-patient">Create New Patient</a></li>
+</ul>
+
+</div>
+
+<p>Work In Progress</p>
+
+<h3 id="notification-admit-patient">Notification Admit Patient</h3>
+
+<h4 id="hl7-v2-adta01-patient-admit">HL7 v2 ADT^A01 Patient Admit</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|PAS|RCB|ROUTE|ROUTE|201010101418||ADT^A01^ADT_A01|1391320453338055|P|2.4|1|20101010141857|||GBR|UNICODE|EN||iTKv1.0
+EVN||201010101400|||111111111^Cortana^Emily^^^Miss^^RCB55|201010101400
+PID|1||3333333333^^^NHS||SMITH^FREDRICA^J^^MRS^^L|SCHMIDT^HELGAR^Y|196512131515|2|||29 WEST AVENUE^BURYTHORPE^MALTON^NORTH YORKSHIRE^YO32 5TT^GBR^H||+441234567890||EN|M|C22|||||A|Berlin|||GBR||DEU
+PD1|||MALTON GP PRACTICE^^Y06601|G5612908^Townley^Gregory^^^Dr^^^GMC
+NK1|1|SMITH^ALBERT^J^^MR^^L|1|29 WEST AVENUE^BURYTHORPE^MALTON^NORTH YORKSHIRE^YO32 5TT^GBR^H|+441234567890||||||||||1|196311111513||||EN
+PV1|1|I|RCB^OBS1^BAY2-6^RCB55|13|||C3456789^Darwin^Samuel^^^Dr^^^GMC|G5612908^Townley^Gregory^^^Dr^^^GMC|C3456789^Darwin^Samuel^^^Dr^^^GMC|300||||19|||||2139^^^VISITID|||||||||||||||||||||||||201010201716
+PV2||||||||||||||||||||||||||||||||||||||C
+AL1|1|DA|Z88.5|5||199807011755
+DG1|1||N39.3^Stress Incontinence^ICD10||201010090900|A|||||||||1|C3456789^Darwin^Samuel^^^Dr^^^GMC|D|N|201010090900
+PR1|1||ZZS4^Colonic examination^OPCS4||201010202056|D|34|||||C3456789^Darwin^Samuel^^^Dr^^^GMC|C3||N39.3
+ZU1|201010071234|1|C|201010091300||500|||||||||201010081200|201010081156|02|Y|0
+ZU3|004|03|5|||||Normal|8b||1|1
+ZU4||201010081756|201010090000
+ZU8|Z|1|No
+</code></pre></div></div>
+
+<h4 id="hl7-fhir-notification-admit-message">HL7 FHIR Notification Admit Message</h4>
+
+<p><a href="Bundle-notification-admit.html">Notification Admit FHIR Message</a></p>
+
+<h4 id="hl7-fhir-notifcation-admit-transaction">HL7 FHIR Notifcation Admit Transaction</h4>
+
+<p>(for use with pure FHIR Server)</p>
+
+<p><a href="Bundle-notification-admit-transaction.html">Notification Admit FHIR Transaction</a></p>
+
+<h3 id="notification-discharge-patient">Notification Discharge Patient</h3>
+
+<h4 id="hl7-v2-adta03-patient-discharge">HL7 v2 ADT^A03 Patient Discharge</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|MATSYSTEM|RCB|PAS|RCB|201003311730||ADT^A03^ADT_A03|13403891320453338089|P|2.4|0|20100331173057|||GBR|UNICODE|EN||iTKv1.0
+EVN||201003311720|||111111111^Cortana^Emily^^Miss^^RCB55|201003311725
+PID|1||3333333333^^^NHS||SMITH^FREDRICA^J^^MRS^^L|SCHMIDT^HELGAR^Y|196512131515|2|||29 WEST AVENUE^BURYTHORPE^MALTON^NORTH YORKSHIRE^YO32 5TT^GBR^H||+441234567890||EN|M|C22|||||A|Berlin|N||GBR||DEU||||ED
+PD1|||MALTON GP PRACTICE^^Y06601|G5612908^Townley^Gregory^^^Dr^^^GMC
+PV1|61|O|RCB^MATWRD^Bed 3^RCB55|82|||C3456789^Darwin^Samuel^^^Dr^^^GMC||C3456789^Darwin^Samuel^^^Dr^^^GMC|500||||79|B6||C3456789^Darwin^Samuel^^^Dr^^^GMC|Pregnant|11554^^^VISITID|||||||||||||||||19||||||||201003301100|201003311715
+PV2|||Labour||||||||||||||||||||||2|||||||||||||C
+</code></pre></div></div>
+
+<h4 id="hl7-fhir-notifcation-discharge-message">HL7 FHIR Notifcation Discharge Message</h4>
+
+<p><a href="Bundle-notification-discharge.html">Notification Discharge FHIR Message</a></p>
+
+<h4 id="hl7-fhir-notifcation-discharge-transaction">HL7 FHIR Notifcation Discharge Transaction</h4>
+
+<p>(for use with pure FHIR Server)</p>
+
+<p><a href="Bundle-notification-discharge-transaction.html">Notification Discharge FHIR Transaction</a></p>
+
+<h3 id="create-new-patient">Create New Patient</h3>
+
+<h4 id="hl7-v2-create-new-patient">HL7 v2 Create New Patient</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|PAS|RCB|ROUTE|ROUTE|201001021215||ADT^A28^ADT_A05|13403891320453338075|P|2.4|0|20100102121557|||GBR|UNICODE|EN||iTKv1.0
+EVN||201001021213|||111111111^Cortana^Emily^^Miss^^RCB55|201001021213
+PID|1||3333333333^^^NHS||SMITH^FREDRICA^J^^MRS^^L|SCHMIDT^HELGAR^Y|196511121515|2|||29 WEST AVENUE^BURYTHORPE^MALTON^NORTH YORKSHIRE^YO32 5TT^GBR^H||+441234567890||EN|M|C22|||||A|Berlin|N||GBR||DEU||||ED
+PD1|||MALTON GP PRACTICE^^Y06601|G5612908^Townley^Gregory^^^Dr^^^GMC
+NK1|2|SMITH^FRANCESCA^^^MRS^^L|16|29 WEST AVENUE^BURYTHORPE^MALTON^NORTH YORKSHIRE^YO32 5TT^GBR^H|+441234567890||||||||||1|196311111513||||EN
+AL1|1|DA|Z88.5|5||199807011755
+ZU8|U|1|Yes|
+</code></pre></div></div>
+
+<h4 id="hl7-fhir-patient-create-message">HL7 FHIR Patient Create Message</h4>
+
+<p><a href="Bundle-patient-create.html">Patient Create FHIR Message</a></p>
+
+<h4 id="hl7-fhir-patient-create-transaction">HL7 FHIR Patient Create Transaction</h4>
+
+<p><a href="Bundle-patient-create-transaction.html">Patient Create FHIR Transaction</a></p>
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+      <div class="inner-wrapper">
+        <p><a name="d5b2d8bf-3b97-4380-bfbe-5a3746de9318">​</a>
+          IG &copy; 2020+ <a style="color: #81BEF7" href="kevin.mayfield@mayfield-is.co.uk">mayfield-is.co.uk</a>.  Package careconnect.messaging.stu3#3.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sat, Feb 29, 2020 07:15+0000">2020-02-29</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

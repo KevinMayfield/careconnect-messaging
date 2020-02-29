@@ -1,0 +1,616 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/111-report> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "111-report"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2015-02-12T21:00:00+00:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1";
+       fhir:index 0
+     ]
+  ];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "https://tools.ietf.org/html/rfc4122" ];
+     fhir:Identifier.value [ fhir:value "8c12c37b-1d65-43fc-b4d3-5bf81b54d7f5" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:926253f1-c43e-4194-81b5-8ba76c924175" ];
+     fhir:Bundle.entry.resource <urn:uuid:926253f1-c43e-4194-81b5-8ba76c924175>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9" ];
+     fhir:Bundle.entry.resource <urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674" ];
+     fhir:Bundle.entry.resource <urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" ];
+     fhir:Bundle.entry.resource <urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:d9174bf6-0662-4ae1-b39a-f9fec278835d" ];
+     fhir:Bundle.entry.resource <urn:uuid:d9174bf6-0662-4ae1-b39a-f9fec278835d>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc" ];
+     fhir:Bundle.entry.resource <urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036" ];
+     fhir:Bundle.entry.resource <urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036>
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf" ];
+     fhir:Bundle.entry.resource <urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf>
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce" ];
+     fhir:Bundle.entry.resource <urn:uuid:eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce>
+  ], [
+     fhir:index 9;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:972c7c13-0910-43da-9a3b-b90416036269" ];
+     fhir:Bundle.entry.resource <urn:uuid:972c7c13-0910-43da-9a3b-b90416036269>
+  ], [
+     fhir:index 10;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:060b292b-a861-455d-b5e6-85f852dd32fc" ];
+     fhir:Bundle.entry.resource <urn:uuid:060b292b-a861-455d-b5e6-85f852dd32fc>
+  ] .
+
+<urn:uuid:926253f1-c43e-4194-81b5-8ba76c924175> a fhir:Composition;
+  fhir:Resource.id [ fhir:value "926253f1-c43e-4194-81b5-8ba76c924175"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-ECD-Composition-1";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 926253f1-c43e-4194-81b5-8ba76c924175</p><p><b>meta</b>: </p><p><b>identifier</b>: 926253f1-c43e-4194-81b5-8ba76c924175</p><p><b>status</b>: final</p><p><b>type</b>: National Health Service 111 Report <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '819551000000100' = '819551000000100', given as 'National Health Service 111 Report'})</span></p><p><b>encounter</b>: <a href=\"#backboneelement_9a20cb92-354a-4015-82ec-ab0252efc5b9\">Generated Summary: unknown resource entry</a></p><p><b>date</b>: 11 May 2011, 21:00:00</p><p><b>author</b>: <a href=\"#backboneelement_369d88a8-9f6b-407f-8560-6ee9d7ccc8bb\">Generated Summary: unknown resource entry</a></p><p><b>title</b>: National Health Service 111 Report</p><p><b>custodian</b>: <a href=\"#backboneelement_120633ae-1a20-4e0e-b807-b78fb59679cc\">Generated Summary: unknown resource entry</a></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-CareSettingType-1" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:394576009;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "394576009" ];
+         fhir:Coding.display [ fhir:value "Accident & emergency" ]
+       ]
+     ]
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "https://tools.ietf.org/html/rfc4122" ];
+     fhir:Identifier.value [ fhir:value "926253f1-c43e-4194-81b5-8ba76c924175" ]
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:819551000000100;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "819551000000100" ];
+       fhir:Coding.display [ fhir:value "National Health Service 111 Report" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674" ]
+  ];
+  fhir:Composition.encounter [
+     fhir:Reference.reference [ fhir:value "urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9" ]
+  ];
+  fhir:Composition.date [ fhir:value "2011-05-11T20:00:00+00:00"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" ]
+  ];
+  fhir:Composition.title [ fhir:value "National Health Service 111 Report"];
+  fhir:Composition.custodian [
+     fhir:Reference.reference [ fhir:value "urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc" ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "NHS 111 Report" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:886791000000105;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "886791000000105" ];
+         fhir:Coding.display [ fhir:value "Handover details" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <div class=\"titlebar\">\n                                <div class=\"doctitle\">NHS 111 Report</div>\n                                <table class=\"titlebar\">\n                                    <tr>\n                                        <th class=\"titlebar\">Encounter Type</th>\n                                        <td class=\"titlebar\">NHS111 Encounter</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Encounter Time</th>\n                                        <td class=\"titlebar\">19-May-2011, 19:45 to 19-May-2011, 20:15</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Case Reference</th>\n                                        <td class=\"titlebar\">CASEREF1234</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Case ID</th>\n                                        <td class=\"titlebar\">CASEID123</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Encounter Disposition</th>\n                                        <td class=\"titlebar\">Go to the nearest Emergency Department within 4 hours.</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Care Setting Location</th>\n                                        <td class=\"titlebar\">Incident Location</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Care Setting Address</th>\n                                        <td class=\"titlebar\">\n                                            <p class=\"label\">Visit Address</p>\n                                            <p>2, Brancaster Road<br/>Medway<br/>ME5 FL5<br/>Follow the high street and turn left by Boots<br/>GB<br/>Great Britain<br/>+38.265789-85.623415\n                                            </p>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Care Setting Type</th>\n                                        <td class=\"titlebar\">Example Care Setting</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Responsible Party</th>\n                                        <td class=\"titlebar\">Dave Cornwell - Medical Director, Medway South Out of Hours Centre<br/></td>\n                                    </tr>\n                                </table>\n                            </div>\n                            <div id=\"participantBanner\" class=\"banner\">\n                                <table>\n                                    <tbody>\n                                        <tr>\n                                            <th class=\"sectitle\">Other participant(s) in this document</th>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                                <table>\n                                    <tr>\n                                        <th class=\"participant\">Referred To</th>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"header\">Referred To Organization</th>\n                                        <td class=\"titlebar\">Medway Community Hospital</td>\n                                    </tr>\n                                </table>\n                                <table class=\"header\">\n                                    <tbody>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\">Visit Address</p>\n                                                <p>Church Street Walk in Centre<br/>4 Church Street<br/>Medway<br/>ME8 7TT\n                                                </p>\n                                            </td>\n                                            <td><span class=\"label\">Emergency Phone </span>0123456789\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table><br/></div>\n                        </div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9" ]
+     ], [
+       fhir:index 1;
+       fhir:Reference.reference [ fhir:value "urn:uuid:972c7c13-0910-43da-9a3b-b90416036269" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "Patient Demographics" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:886731000000109;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "886731000000109" ];
+         fhir:Coding.display [ fhir:value "Patient Demographics" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <div>\n                                <table>\n                                    <tbody>\n                                        <tr>\n                                            <td class=\"label\">Patient demographics</td>\n                                        </tr>\n                                        <tr>\n                                            <td class=\"label\">NHS number</td>\n                                            <td class=\"label\">Other identifier</td>\n                                        </tr>\n                                        <tr>\n                                            <td>JOE, Blogg (Mr)</td>\n                                            <td>01-Jan-1989</td>\n                                            <td>Male</td>\n                                            <td>\n                                                <span class=\"label\">Unverified - </span>9x<br/>\n                                            </td>\n                                            <td>\n                                                <span class=\"label\">Local identifier - </span>K12345<br/>\n                                            </td>\n                                        </tr>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\"> Communication Language </p>\n                                                <p>English</p>\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                                <table class=\"header\">\n                                    <tbody>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\">Home Address</p>\n                                                <p>17, County Avenue<br/>Woodtown<br/>Medway<br/>ME5 FS3 </p>\n                                            </td>\n                                            <td>\n                                                <span class=\"label\">Home Phone </span>01634775667<br/>\n                                                <span class=\"label\">Vacation/Temporary  Phone </span>01634451628<br/>\n                                                <span class=\"label\">Home Email </span>Joe.Blogg@emailfree.co.uk\n                                            </td>\n                                        </tr>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\">GP Practice</p>\n                                            </td>\n\n                                            <td>Medway Medical Practice</td>\n\n                                            <td>\n                                                <p class=\"label\">Address</p>Springer Street<br/>Medway<br/>ME5 5TY<br/>\n                                            </td>\n                                            <td>\n                                                <p>\n                                                    <span class=\"label\">Phone </span>01634111222\n                                                </p>\n                                            </td>\n                                        </tr>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\">GP Practice Code</p>V396F\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                            </div>\n                            <div id=\"informantBanner\" class=\"banner\">\n                                <table>\n                                    <tbody>\n                                        <tr>\n                                            <th class=\"header\">Informant</th>\n                                            <td>Helga Bloggs - Spouse</td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                                <table class=\"header\">\n                                    <tbody>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\">Primary Home Address</p>\n                                                <p>43 Summers Avenue<br/>Somerset Street<br/>Medway<br/>ME5 7TY\n                                                </p>\n                                            </td>\n                                            <td><span class=\"label\">Mobile Phone </span>07886554123\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                            </div>\n                        </div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Composition.section.title [ fhir:value "Consent for information sharing" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:887031000000108;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "887031000000108" ];
+         fhir:Coding.display [ fhir:value "Consent for information sharing" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <table>\n                            <tbody>\n                                <tr>\n                                    <th class=\"default\">Permission to view outcome</th>\n                                    <td>Permission to view obtained</td>\n                                </tr>\n                                <tr>\n                                    <th class=\"default\">Date obtained</th>\n                                    <td>19-May-2011, 20:00</td>\n                                </tr>\n                                <tr>\n                                    <th class=\"default\">Date expires</th>\n                                    <td>26-May-2011, 20:00</td>\n                                </tr>\n                            </tbody>\n                            </table>\n                        </div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "urn:uuid:eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Composition.section.title [ fhir:value "Presenting complaints or issues" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:886891000000102;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "886891000000102" ];
+         fhir:Coding.display [ fhir:value "Presenting complaints or issues" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            Patient has an insect bite.\n                        </div>"
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Composition.section.title [ fhir:value "Case Summary" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:887181000000106;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "887181000000106" ];
+         fhir:Coding.display [ fhir:value "Clinical summary " ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <span class=\"bold\">Disposition:</span>\n                            <br/>\n                            Go to the nearest Emergency Department within 4 hours.\n                            <br/>\n                            <span class=\"bold\">Selected care service:</span>\n                            <br/>\n                            Dx009\n                            <br/>\n                            <span class=\"bold\">Pathways Assessment:</span>\n                            <br/>\n                            An injury or other health problem was described.\n                            <br/>The individual was described as breathing and conscious.\n                            <br/>Loss of at least a mugful of blood in the last 30 minutes was not described.\n                            <br/>An illness or other health problem was described. - Insect Bite\n                            <br/>Fighting for breath was not described.\n                            <br/>A heart attack, chest/upper back pain, recent probable stroke, recent fit/seizure\n                            or suicide attempt was not described as the main call reason.\n                            <br/>New confusion, a diabetic hypo, a probable allergic reaction or successful resuscitation\n                            was not described as being the main call reason.\n                            <br/>The individual was described as being warm to touch.\n                            <br/>An insect or spider bite or sting was described. - Tick Bite\n                            <br/>A sting/bite occurring within the last hour was not described.\n                            <br/>10 or more stings were not described.\n                            <br/>Nausea or vomiting since the sting was not described.\n                            <br/>A sting involving the eyes or mouth was not described.\n                            <br/>A fever was not described.\n                            <br/>An insect still attached to the skin was described.\n                            <br/>A tick bite was described.\n                            <br/>\n\n                            <span class=\"bold\">Advice given:</span>\n                            <br/>\n                            Remove any jewellery or tight clothing from the area.\n                            <br/>Antihistamine medication and creams help reduce swelling and itching. They can be\n                            bought from pharmacies. Talk to the pharmacist for advice. Follow the instructions\n                            in the pack.\n                            <br/>Unless advised not to, or they have already been given, paracetamol or ibuprofen can\n                            be used to relieve pain. Follow the instructions in the pack. If in doubt ask a pharmacist.\n\n                            <br/>\n                            <br/>\n                            This may have a structured record of the triage pathawy but this is not included\n                        </div>"
+     ]
+  ], [
+     fhir:index 5;
+     fhir:Composition.section.title [ fhir:value "Patient Special Notes" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:886741000000100;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "886741000000100" ];
+         fhir:Coding.display [ fhir:value "Special requirements" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            Patient has history of violence towards health care professionals\n                        </div>"
+     ]
+  ] .
+
+<urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9> a fhir:Encounter;
+  fhir:Resource.id [ fhir:value "9a20cb92-354a-4015-82ec-ab0252efc5b9"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 9a20cb92-354a-4015-82ec-ab0252efc5b9</p><p><b>identifier</b>: CASEID123, CASEREF1234</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Telephone triage encounter <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '401267002' = 'Telephone triage encounter (procedure)', given as 'Telephone triage encounter'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_6438cfe6-8012-4ec4-b83d-a680f8a41674\">Generated Summary: unknown resource entry</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_369d88a8-9f6b-407f-8560-6ee9d7ccc8bb\">Mary Jones. Generated Summary: unknown resource entry</a></td></tr></table><p><b>period</b>: 19 May 2011, 20:45:00 --&gt; 19 May 2011, 21:15:00</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>DischargeDisposition</b></td></tr><tr><td>*</td><td>Go to the nearest Emergency Department within 4 hours. <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1 code 'Dx009' = 'Dx009', given as 'Go to the nearest Emergency Department within 4 hours.'})</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_060b292b-a861-455d-b5e6-85f852dd32fc\">Generated Summary: unknown resource entry</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"#backboneelement_369d88a8-9f6b-407f-8560-6ee9d7ccc8bb\">Medway South Out of Hours Centre. Generated Summary: unknown resource entry</a></p></div>"
+  ];
+  fhir:Encounter.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://fhir.medway.nhs.uk/case-id" ];
+     fhir:Identifier.value [ fhir:value "CASEID123" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "https://fhir.medway.nhs.uk/case-reference" ];
+     fhir:Identifier.value [ fhir:value "CASEREF1234" ]
+  ];
+  fhir:Encounter.status [ fhir:value "finished"];
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ActCode" ];
+     fhir:Coding.code [ fhir:value "AMB" ];
+     fhir:Coding.display [ fhir:value "ambulatory" ]
+  ];
+  fhir:Encounter.participant [
+     fhir:index 0;
+     fhir:Encounter.participant.individual [
+       fhir:Reference.reference [ fhir:value "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" ];
+       fhir:Reference.display [ fhir:value "Mary Jones" ]
+     ]
+  ];
+  fhir:Encounter.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:401267002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "401267002" ];
+       fhir:Coding.display [ fhir:value "Telephone triage encounter" ]
+     ]
+  ];
+  fhir:Encounter.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674" ]
+  ];
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2011-05-19T19:45:00+00:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2011-05-19T20:15:00+00:00"^^xsd:dateTime ]
+  ];
+  fhir:Encounter.location [
+     fhir:index 0;
+     fhir:Encounter.location.location [
+       fhir:Reference.reference [ fhir:value "urn:uuid:060b292b-a861-455d-b5e6-85f852dd32fc" ]
+     ]
+  ];
+  fhir:Encounter.hospitalization [
+     fhir:Encounter.hospitalization.dischargeDisposition [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1" ];
+         fhir:Coding.code [ fhir:value "Dx009" ];
+         fhir:Coding.display [ fhir:value "Go to the nearest Emergency Department within 4 hours." ]
+       ]
+     ]
+  ];
+  fhir:Encounter.serviceProvider [
+     fhir:Reference.reference [ fhir:value "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" ];
+     fhir:Reference.display [ fhir:value "Medway South Out of Hours Centre" ]
+  ] .
+
+<urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "6438cfe6-8012-4ec4-b83d-a680f8a41674"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6438cfe6-8012-4ec4-b83d-a680f8a41674</p><p><b>meta</b>: </p><p><b>identifier</b>: 993254128</p><p><b>name</b>: Joe Blogg (OFFICIAL)</p><p><b>telecom</b>: ph: 01634775667(HOME), Joe.Blogg@emailfree.co.uk(HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-01-01</p><p><b>address</b>: 17, County Way Woodtown Medway ME5 FS3 </p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td><td><b>Gender</b></td></tr><tr><td>*</td><td>Helga Blogg </td><td>ph: 07886554123</td><td>43 Summers Avenue Somerset Street Medway ME5 7TY </td><td>female</td></tr></table><p><b>managingOrganization</b>: <a href=\"#backboneelement_a0ff2363-f00d-4542-9f6a-624e71513ebf\">Thames Medical Practice. Generated Summary: unknown resource entry</a></p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1" ];
+           fhir:Coding.code [ fhir:value "01" ];
+           fhir:Coding.display [ fhir:value "Number present and verified" ]
+         ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Id/nhs-number" ];
+     fhir:Identifier.value [ fhir:value "993254128" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [ fhir:value "Blogg" ];
+     fhir:HumanName.given [
+       fhir:value "Joe";
+       fhir:index 0
+     ];
+     fhir:HumanName.prefix [
+       fhir:value "Mr";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1989-01-01"^^xsd:date];
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.use [ fhir:value "home" ];
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "01634775667" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.use [ fhir:value "home" ];
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "Joe.Blogg@emailfree.co.uk" ]
+  ];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "17, County Way";
+       fhir:index 0
+     ], [
+       fhir:value "Woodtown";
+       fhir:index 1
+     ];
+     fhir:Address.city [ fhir:value "Medway" ];
+     fhir:Address.postalCode [ fhir:value "ME5 FS3" ]
+  ];
+  fhir:Patient.contact [
+     fhir:index 0;
+     fhir:Patient.contact.name [
+       fhir:HumanName.use [ fhir:value "usual" ];
+       fhir:HumanName.family [ fhir:value "Blogg" ];
+       fhir:HumanName.given [
+         fhir:value "Helga";
+         fhir:index 0
+       ]
+     ];
+     fhir:Patient.contact.gender [ fhir:value "female" ];
+     fhir:Patient.contact.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "07886554123" ]
+     ];
+     fhir:Patient.contact.address [
+       fhir:Address.line [
+         fhir:value "43 Summers Avenue";
+         fhir:index 0
+       ], [
+         fhir:value "Somerset Street";
+         fhir:index 1
+       ];
+       fhir:Address.city [ fhir:value "Medway" ];
+       fhir:Address.postalCode [ fhir:value "ME5 7TY" ]
+     ]
+  ];
+  fhir:Patient.managingOrganization [
+     fhir:Reference.reference [ fhir:value "urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf" ];
+     fhir:Reference.display [ fhir:value "Thames Medical Practice" ]
+  ] .
+
+<urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 369d88a8-9f6b-407f-8560-6ee9d7ccc8bb</p><p><b>meta</b>: </p><p><b>name</b>: Mary Jones </p></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Jones" ];
+     fhir:HumanName.given [
+       fhir:value "Mary";
+       fhir:index 0
+     ]
+  ] .
+
+<urn:uuid:d9174bf6-0662-4ae1-b39a-f9fec278835d> a fhir:PractitionerRole;
+  fhir:Resource.id [ fhir:value "d9174bf6-0662-4ae1-b39a-f9fec278835d"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: d9174bf6-0662-4ae1-b39a-f9fec278835d</p><p><b>meta</b>: </p><p><b>practitioner</b>: <a href=\"#backboneelement_369d88a8-9f6b-407f-8560-6ee9d7ccc8bb\">Generated Summary: unknown resource entry</a></p><p><b>organization</b>: <a href=\"#backboneelement_120633ae-1a20-4e0e-b807-b78fb59679cc\">Medway NHS Foundation Trust. Generated Summary: unknown resource entry</a></p><p><b>code</b>: Nurse Triage Practitioner <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.2.1.3.2.4.17.196 code 'T1' = 'T1', given as 'Nurse Triage Practitioner'})</span></p></div>"
+  ];
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.2.1.3.2.4.17.196" ];
+       fhir:Coding.code [ fhir:value "T1" ];
+       fhir:Coding.display [ fhir:value "Nurse Triage Practitioner" ]
+     ]
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:Reference.reference [ fhir:value "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" ]
+  ];
+  fhir:PractitionerRole.organization [
+     fhir:Reference.reference [ fhir:value "urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc" ];
+     fhir:Reference.display [ fhir:value "Medway NHS Foundation Trust" ]
+  ] .
+
+<urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "120633ae-1a20-4e0e-b807-b78fb59679cc"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 120633ae-1a20-4e0e-b807-b78fb59679cc</p><p><b>meta</b>: </p><p><b>identifier</b>: K12345</p><p><b>name</b>: Medway NHS Foundation Trust</p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Id/ods-organization-code" ];
+     fhir:Identifier.value [ fhir:value "K12345" ]
+  ];
+  fhir:Organization.name [ fhir:value "Medway NHS Foundation Trust"] .
+
+<urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "4d7c758f-55c7-41f1-961f-4ccd1ed9d036"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 4d7c758f-55c7-41f1-961f-4ccd1ed9d036</p><p><b>meta</b>: </p><p><b>identifier</b>: EM396</p><p><b>name</b>: Medway Kent Out of Hours Clinic</p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Id/ods-organization-code" ];
+     fhir:Identifier.value [ fhir:value "EM396" ]
+  ];
+  fhir:Organization.name [ fhir:value "Medway Kent Out of Hours Clinic"] .
+
+<urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "a0ff2363-f00d-4542-9f6a-624e71513ebf"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a0ff2363-f00d-4542-9f6a-624e71513ebf</p><p><b>meta</b>: </p><p><b>identifier</b>: PRA123</p><p><b>name</b>: Thames Medical Practice</p><p><b>address</b>: null null </p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://fhir.nhs.uk/Id/ods-organization-code" ];
+     fhir:Identifier.value [ fhir:value "PRA123" ]
+  ];
+  fhir:Organization.name [ fhir:value "Thames Medical Practice"];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.line [ fhir:index 0 ], [ fhir:index 1 ];
+     fhir:Address.city [ ];
+     fhir:Address.district [ ];
+     fhir:Address.postalCode [ ]
+  ] .
+
+<urn:uuid:eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce> a fhir:Consent;
+  fhir:Resource.id [ fhir:value "eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce</p><p><b>status</b>: active</p><p><b>patient</b>: <a href=\"#backboneelement_6438cfe6-8012-4ec4-b83d-a680f8a41674\">Generated Summary: unknown resource entry</a></p><p><b>purpose</b>: Consent given for electronic record sharing (Details: SNOMED CT code 425691002 = 'Consent given for electronic record sharing (finding)', stated as 'Consent given for electronic record sharing')</p></div>"
+  ];
+  fhir:Consent.status [ fhir:value "active"];
+  fhir:Consent.patient [
+     fhir:Reference.reference [ fhir:value "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674" ]
+  ];
+  fhir:Consent.purpose [
+     fhir:index 0;
+     a sct:425691002;
+     fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+     fhir:Coding.code [ fhir:value "425691002" ];
+     fhir:Coding.display [ fhir:value "Consent given for electronic record sharing" ]
+  ] .
+
+<urn:uuid:972c7c13-0910-43da-9a3b-b90416036269> a fhir:ReferralRequest;
+  fhir:Resource.id [ fhir:value "972c7c13-0910-43da-9a3b-b90416036269"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 972c7c13-0910-43da-9a3b-b90416036269</p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>type</b>: Referral by Accident and Emergency <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '397593002' = 'Referral by emergency medical admissions unit (procedure)', given as 'Referral by Accident and Emergency'})</span></p><p><b>priority</b>: urgent</p><p><b>serviceRequested</b>: Patient Handover <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '807131000000108' = '807131000000108', given as 'Patient Handover'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_6438cfe6-8012-4ec4-b83d-a680f8a41674\">Generated Summary: unknown resource entry</a></p><h3>Requesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Agent</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_369d88a8-9f6b-407f-8560-6ee9d7ccc8bb\">Mary Jones. Generated Summary: unknown resource entry</a></td></tr></table><p><b>recipient</b>: </p><ul><li><a href=\"#backboneelement_4d7c758f-55c7-41f1-961f-4ccd1ed9d036\">Medway NHS Foundation Trust. Generated Summary: unknown resource entry</a></li><li><a href=\"#backboneelement_a0ff2363-f00d-4542-9f6a-624e71513ebf\">Thames Medical Practice. Generated Summary: unknown resource entry</a></li></ul><p><b>reasonCode</b>: Go to the nearest Emergency Department within 4 hours. <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1 code 'Dx009' = 'Dx009', given as 'Go to the nearest Emergency Department within 4 hours.'})</span></p></div>"
+  ];
+  fhir:ReferralRequest.status [ fhir:value "active"];
+  fhir:ReferralRequest.intent [ fhir:value "proposal"];
+  fhir:ReferralRequest.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674" ]
+  ];
+  fhir:ReferralRequest.priority [ fhir:value "urgent"];
+  fhir:ReferralRequest.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:397593002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "397593002" ];
+       fhir:Coding.display [ fhir:value "Referral by Accident and Emergency" ]
+     ]
+  ];
+  fhir:ReferralRequest.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1" ];
+       fhir:Coding.code [ fhir:value "Dx009" ];
+       fhir:Coding.display [ fhir:value "Go to the nearest Emergency Department within 4 hours." ]
+     ]
+  ];
+  fhir:ReferralRequest.requester [
+     fhir:ReferralRequest.requester.agent [
+       fhir:Reference.reference [ fhir:value "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb" ];
+       fhir:Reference.display [ fhir:value "Mary Jones" ]
+     ]
+  ];
+  fhir:ReferralRequest.recipient [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036" ];
+     fhir:Reference.display [ fhir:value "Medway NHS Foundation Trust" ]
+  ], [
+     fhir:index 1;
+     fhir:Reference.reference [ fhir:value "urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf" ];
+     fhir:Reference.display [ fhir:value "Thames Medical Practice" ]
+  ];
+  fhir:ReferralRequest.serviceRequested [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:807131000000108;
+       fhir:Coding.code [ fhir:value "807131000000108" ];
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.display [ fhir:value "Patient Handover" ]
+     ]
+  ] .
+
+<urn:uuid:060b292b-a861-455d-b5e6-85f852dd32fc> a fhir:Location;
+  fhir:Resource.id [ fhir:value "060b292b-a861-455d-b5e6-85f852dd32fc"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 060b292b-a861-455d-b5e6-85f852dd32fc</p><p><b>status</b>: active</p><p><b>description</b>: Follow the high street and turn left by Boots</p><p><b>address</b>: null </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td/></tr></table><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+  ];
+  fhir:Location.status [ fhir:value "active"];
+  fhir:Location.address [
+     fhir:Address.line [ fhir:index 0 ];
+     fhir:Address.city [ ];
+     fhir:Address.postalCode [ ];
+     fhir:Address.country [ ]
+  ];
+  fhir:Location.description [ fhir:value "Follow the high street and turn left by Boots"];
+  fhir:Location.position [
+     fhir:Location.position.longitude [ ];
+     fhir:Location.position.latitude [ ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://kevinmayfield.github.io/careconnect-api-stu3/Bundle/111-report.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

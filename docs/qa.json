@@ -3,8 +3,10 @@
   "name": "Care Connect Messaging",
   "package-id": "careconnect.messaging.stu3",
   "ig-ver": "3.0.0",
-  "date": "Fri, 14 Feb, 2020 17:46:58 +0000",
-  "exception": "Error parsing /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/resources/graphdefinition/patient-referral-message: class org.hl7.fhir.r5.model.UriType cannot be cast to class org.hl7.fhir.r5.model.CanonicalType (org.hl7.fhir.r5.model.UriType and org.hl7.fhir.r5.model.CanonicalType are in unnamed module of loader \u0027app\u0027)",
+  "date": "Sat, 29 Feb, 2020 07:15:42 +0000",
+  "errs": 394,
+  "warnings": 50,
+  "hints": 234,
   "version": "3.0.2",
   "tool": "4.2.0 (3)"
 }

@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1",
+  "code" : "Dx009"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1\" is not known (encountered paired with code = \"Dx009\"); The code provided (https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1#Dx009) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

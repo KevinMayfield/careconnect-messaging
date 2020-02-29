@@ -1,0 +1,630 @@
+{
+  "resourceType": "Bundle",
+  "id": "ambulance-request",
+  "meta": {
+    "lastUpdated": "2015-02-12T21:00:00+00:00",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1"
+    ]
+  },
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "e3035910-045c-4329-a0f5-d8fa8be430df"
+  },
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:9009fdb0-e03c-498e-ad94-3b5a6d92ff4e",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "9009fdb0-e03c-498e-ad94-3b5a6d92ff4e",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-ECD-Composition-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 9009fdb0-e03c-498e-ad94-3b5a6d92ff4e</p><p><b>meta</b>: </p><p><b>identifier</b>: 62edf674-8722-44b4-9557-4e1b6d68c1fe</p><p><b>status</b>: final</p><p><b>type</b>: NHS 111 Final Ambulance Request <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '828801000000101' = '828801000000101', given as 'NHS 111 Final Ambulance Request'})</span></p><p><b>encounter</b>: <a href=\"#backboneelement_498f47b8-8ae1-48c5-9dc1-c5d3b9eb0ab7\">Generated Summary: unknown resource entry</a></p><p><b>date</b>: 11 May 2011, 21:00:00</p><p><b>author</b>: <a href=\"#backboneelement_2a1022dd-a998-41a1-9941-71a413ee9172\">Generated Summary: unknown resource entry</a></p><p><b>title</b>: NHS 111 Final Ambulance Request</p><p><b>custodian</b>: <a href=\"#backboneelement_1a513009-ec68-4ee8-b279-4cad6545c6ec\">Generated Summary: unknown resource entry</a></p></div>"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-CareSettingType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "394576009",
+                  "display": "Accident & emergency"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": {
+          "system": "https://tools.ietf.org/html/rfc4122",
+          "value": "62edf674-8722-44b4-9557-4e1b6d68c1fe"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "828801000000101",
+              "display": "NHS 111 Final Ambulance Request"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:e228e899-f437-4927-b5c5-4786dce9dc43"
+        },
+        "encounter": {
+          "reference": "urn:uuid:498f47b8-8ae1-48c5-9dc1-c5d3b9eb0ab7"
+        },
+        "date": "2011-05-11T20:00:00+00:00",
+        "author": [
+          {
+            "reference": "urn:uuid:2a1022dd-a998-41a1-9941-71a413ee9172"
+          }
+        ],
+        "title": "NHS 111 Final Ambulance Request",
+        "custodian": {
+          "reference": "urn:uuid:1a513009-ec68-4ee8-b279-4cad6545c6ec"
+        },
+        "section": [
+          {
+            "title": "NHS 111 Final Ambulance Request",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "886791000000105",
+                  "display": "Handover details"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            No text section is provided in the Ambulance Request Message (it is all structured)\n                        </div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:498f47b8-8ae1-48c5-9dc1-c5d3b9eb0ab7"
+              },
+              {
+                "reference": "urn:uuid:5885c08d-e1c9-43ff-ae1b-aedb38067908"
+              }
+            ]
+          },
+          {
+            "title": "Patient Demographics",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "886731000000109",
+                  "display": "Patient Demographics"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            No text section is provided in the Ambulance Request Message (it is all structured)\n                        </div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:e228e899-f437-4927-b5c5-4786dce9dc43"
+              }
+            ]
+          },
+          {
+            "title": "Consent for information sharing",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "887031000000108",
+                  "display": "Consent for information sharing"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <table>\n                            <tbody>\n                                <tr>\n                                    <th class=\"default\">Permission to view outcome</th>\n                                    <td>Permission to view obtained</td>\n                                </tr>\n                                <tr>\n                                    <th class=\"default\">Date obtained</th>\n                                    <td>19-May-2011, 20:00</td>\n                                </tr>\n                                <tr>\n                                    <th class=\"default\">Date expires</th>\n                                    <td>26-May-2011, 20:00</td>\n                                </tr>\n                            </tbody>\n                            </table>\n                        </div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:679091ff-f273-40fc-a560-44594b6454eb"
+              }
+            ]
+          },
+          {
+            "title": "Presenting complaints or issues",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "886891000000102",
+                  "display": "Presenting complaints or issues"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            Patient has an insect bite.\n                        </div>"
+            }
+          },
+          {
+            "title": "Case Summary",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "887181000000106",
+                  "display": "Clinical summary "
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            Patient: Joe Bloggs Disposition: Go to the nearest Emergency Department within 4 hours.<br/> \n                            Selected care service: Dx009 Pathways Assessment: An injury or other health problem was described.<br/> \n                            The individual was described as breathing and conscious. <br/>\n                            Loss of at least a mugful of blood in the last 30 minutes was not described.<br/> \n                            An illness or other health problem was described. - Insect Bite Fighting for breath was not described. <br/>\n                            A heart attack, chest/upper back pain, recent probable stroke, recent fit/seizure or suicide attempt was not described as the main call reason. <br/>\n                            New confusion, a diabetic hypo, a probable allergic reaction or successful resuscitation was not described as being the main call reason.<br/> \n                            The individual was described as being warm to touch. <br/>\n                            An insect or spider bite or sting was described. - Tick Bite A sting/bite occurring within the last hour was not described. <br/>\n                            10 or more stings were not described. <br/>\n                            Nausea or vomiting since the sting was not described.<br/> \n                            A sting involving the eyes or mouth was not described. <br/>\n                            A fever was not described. An insect still attached to the skin was described. <br/>\n                            A tick bite was described. Advice given: Remove any jewellery or tight clothing from the area. <br/>\n                            Antihistamine medication and creams help reduce swelling and itching.<br/> \n                            They can be bought from pharmacies. <br/>\n                            Talk to the pharmacist for advice.<br/> \n                            Follow the instructions in the pack. <br/>\n                            Unless advised not to, or they have already been given, paracetamol or ibuprofen can be used to relieve pain.<br/> \n                            Follow the instructions in the pack. If in doubt ask a pharmacist.<br/>\n                        </div>"
+            }
+          },
+          {
+            "title": "Patient Special Notes",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "886741000000100",
+                  "display": "Special requirements"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            Patient has history of violence towards health care professionals\n                        </div>"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:498f47b8-8ae1-48c5-9dc1-c5d3b9eb0ab7",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "498f47b8-8ae1-48c5-9dc1-c5d3b9eb0ab7",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 498f47b8-8ae1-48c5-9dc1-c5d3b9eb0ab7</p><p><b>identifier</b>: LOCAL-HP54, NHS111-234567890</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Telephone triage encounter <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '401267002' = 'Telephone triage encounter (procedure)', given as 'Telephone triage encounter'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_e228e899-f437-4927-b5c5-4786dce9dc43\">Generated Summary: unknown resource entry</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_2a1022dd-a998-41a1-9941-71a413ee9172\">Mr Harry Parker. Generated Summary: unknown resource entry</a></td></tr></table><p><b>period</b>: 19 May 2011, 20:45:00 --&gt; 19 May 2011, 21:15:00</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>DischargeDisposition</b></td></tr><tr><td>*</td><td>Blood loss - urgent care require <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.2.1.3.2.4.17.414 code 'Dx009' = 'Dx009', given as 'Blood loss - urgent care require'})</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_6200f9ee-4d77-4d0f-8da1-b0bc4db0000d\">Generated Summary: unknown resource entry</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"#backboneelement_1a513009-ec68-4ee8-b279-4cad6545c6ec\">NHS 111 Call Centre Chelmsford. Generated Summary: unknown resource entry</a></p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.medway111.nhs.uk/case-id",
+            "value": "LOCAL-HP54"
+          },
+          {
+            "system": "https://fhir.medway111.nhs.uk/case-reference",
+            "value": "NHS111-234567890"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://hl7.org/fhir/v3/ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "401267002",
+                "display": "Telephone triage encounter"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:e228e899-f437-4927-b5c5-4786dce9dc43"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:2a1022dd-a998-41a1-9941-71a413ee9172",
+              "display": "Mr Harry Parker"
+            }
+          }
+        ],
+        "serviceProvider": {
+          "reference": "urn:uuid:1a513009-ec68-4ee8-b279-4cad6545c6ec",
+          "display": "NHS 111 Call Centre Chelmsford"
+        },
+        "period": {
+          "start": "2011-05-19T19:45:00+00:00",
+          "end": "2011-05-19T20:15:00+00:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:6200f9ee-4d77-4d0f-8da1-b0bc4db0000d"
+            }
+          }
+        ],
+        "hospitalization": {
+          "dischargeDisposition": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.17.414",
+                "code": "Dx009",
+                "display": "Blood loss - urgent care require"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e228e899-f437-4927-b5c5-4786dce9dc43",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "e228e899-f437-4927-b5c5-4786dce9dc43",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: e228e899-f437-4927-b5c5-4786dce9dc43</p><p><b>meta</b>: </p><p><b>identifier</b>: 5689098431</p><p><b>name</b>: Jack Assington (OFFICIAL)</p><p><b>telecom</b>: ph: 0765478574(HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1976-01-08</p><p><b>address</b>: 7 Lime Avenue Chelmsford ME5 FS3 </p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td><td><b>Gender</b></td></tr><tr><td>*</td><td>Emergency Contact <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v2/0131 code 'C' = 'Emergency Contact', given as 'Emergency Contact'})</span></td><td>Perry Wiggins </td><td>ph: 076651234567(TEMP)</td><td>43 Summers Avenue Somerset Street Medway ME5 7TY </td><td>male</td></tr></table><p><b>managingOrganization</b>: <a href=\"#backboneelement_a0ff2363-f00d-4542-9f6a-624e71513ebf\">The Surgery. Generated Summary: unknown resource entry</a></p></div>"
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "5689098431"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Assington",
+            "given": [
+              "Jack"
+            ],
+            "prefix": [
+              "Mr"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1976-01-08",
+        "telecom": [
+          {
+            "use": "home",
+            "system": "phone",
+            "value": "0765478574"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "7 Lime Avenue"
+            ],
+            "city": "Chelmsford",
+            "district": "Essex",
+            "postalCode": "ME5 FS3"
+          }
+        ],
+        "contact": [
+          {
+            "name": {
+              "use": "usual",
+              "family": "Wiggins",
+              "given": [
+                "Perry"
+              ]
+            },
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v2/0131",
+                    "code": "C",
+                    "display": "Emergency Contact"
+                  }
+                ]
+              }
+            ],
+            "gender": "male",
+            "telecom": [
+              {
+                "system": "phone",
+                "use": "temp",
+                "value": "076651234567"
+              }
+            ],
+            "address": {
+              "line": [
+                "43 Summers Avenue",
+                "Somerset Street"
+              ],
+              "city": "Medway",
+              "postalCode": "ME5 7TY"
+            }
+          }
+        ],
+        "managingOrganization": {
+          "reference": "urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf",
+          "display": "The Surgery"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2a1022dd-a998-41a1-9941-71a413ee9172",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "2a1022dd-a998-41a1-9941-71a413ee9172",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 2a1022dd-a998-41a1-9941-71a413ee9172</p><p><b>meta</b>: </p><p><b>name</b>: Harry Parker </p></div>"
+        },
+        "name": [
+          {
+            "family": "Parker",
+            "given": [
+              "Harry"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2e8d26d7-1447-4e0e-a03e-3ab9897cd0ad",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "2e8d26d7-1447-4e0e-a03e-3ab9897cd0ad",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 2e8d26d7-1447-4e0e-a03e-3ab9897cd0ad</p><p><b>meta</b>: </p><p><b>identifier</b>: 8666463078</p><p><b>practitioner</b>: <a href=\"#backboneelement_2a1022dd-a998-41a1-9941-71a413ee9172\">Generated Summary: unknown resource entry</a></p><p><b>organization</b>: <a href=\"#backboneelement_1a513009-ec68-4ee8-b279-4cad6545c6ec\">NHS 111 Call Centre Chelmsford. Generated Summary: unknown resource entry</a></p><p><b>code</b>: Call Handler level 1 <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.2.1.3.2.4.17.196 code 'CH1' = 'CH1', given as 'Call Handler level 1'})</span></p><p><b>telecom</b>: harry.parker@nhs.net, ph: 0123456789</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+            "value": "8666463078"
+          }
+        ],
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.17.196",
+                "code": "CH1",
+                "display": "Call Handler level 1"
+              }
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "value": "harry.parker@nhs.net"
+          },
+          {
+            "system": "phone",
+            "value": "0123456789"
+          }
+        ],
+        "practitioner": {
+          "reference": "urn:uuid:2a1022dd-a998-41a1-9941-71a413ee9172"
+        },
+        "organization": {
+          "reference": "urn:uuid:1a513009-ec68-4ee8-b279-4cad6545c6ec",
+          "display": "NHS 111 Call Centre Chelmsford"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1a513009-ec68-4ee8-b279-4cad6545c6ec",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "1a513009-ec68-4ee8-b279-4cad6545c6ec",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 1a513009-ec68-4ee8-b279-4cad6545c6ec</p><p><b>meta</b>: </p><p><b>identifier</b>: NHS111ABC</p><p><b>name</b>: NHS 111 Call Centre Chelmsford</p><p><b>address</b>: The call centre 2 Bank Road Chelmsford EX1 5RT </p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "NHS111ABC"
+          }
+        ],
+        "name": "NHS 111 Call Centre Chelmsford",
+        "address": [
+          {
+            "line": [
+              "The call centre",
+              "2 Bank Road"
+            ],
+            "city": "Chelmsford",
+            "district": "Essex",
+            "postalCode": "EX1 5RT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "4d7c758f-55c7-41f1-961f-4ccd1ed9d036",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 4d7c758f-55c7-41f1-961f-4ccd1ed9d036</p><p><b>meta</b>: </p><p><b>identifier</b>: AMB123</p><p><b>name</b>: East Chelmsford Ambulance Service</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "AMB123"
+          }
+        ],
+        "name": "East Chelmsford Ambulance Service"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "a0ff2363-f00d-4542-9f6a-624e71513ebf",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a0ff2363-f00d-4542-9f6a-624e71513ebf</p><p><b>meta</b>: </p><p><b>identifier</b>: SUR556</p><p><b>name</b>: The Surgery</p><p><b>address</b>: null null </p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "SUR556"
+          }
+        ],
+        "name": "The Surgery",
+        "address": [
+          {}
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:679091ff-f273-40fc-a560-44594b6454eb",
+      "resource": {
+        "resourceType": "Consent",
+        "id": "679091ff-f273-40fc-a560-44594b6454eb",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 679091ff-f273-40fc-a560-44594b6454eb</p><p><b>status</b>: active</p><p><b>patient</b>: <a href=\"#backboneelement_e228e899-f437-4927-b5c5-4786dce9dc43\">Generated Summary: unknown resource entry</a></p><p><b>purpose</b>: Consent given for electronic record sharing (Details: SNOMED CT code 425691002 = 'Consent given for electronic record sharing (finding)', stated as 'Consent given for electronic record sharing')</p></div>"
+        },
+        "status": "active",
+        "patient": {
+          "reference": "urn:uuid:e228e899-f437-4927-b5c5-4786dce9dc43"
+        },
+        "purpose": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "425691002",
+            "display": "Consent given for electronic record sharing"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5885c08d-e1c9-43ff-ae1b-aedb38067908",
+      "resource": {
+        "resourceType": "ReferralRequest",
+        "id": "5885c08d-e1c9-43ff-ae1b-aedb38067908",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 5885c08d-e1c9-43ff-ae1b-aedb38067908</p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>type</b>: Referral by Accident and Emergency <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '397593002' = 'Referral by emergency medical admissions unit (procedure)', given as 'Referral by Accident and Emergency'})</span></p><p><b>priority</b>: urgent</p><p><b>serviceRequested</b>: Ambulance Request - Serious condition Cat R2 <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.2.1.3.2.4.17.329 code 'R2' = 'R2', given as 'Ambulance Request - Serious condition Cat R2'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_e228e899-f437-4927-b5c5-4786dce9dc43\">Generated Summary: unknown resource entry</a></p><h3>Requesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Agent</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_2a1022dd-a998-41a1-9941-71a413ee9172\">Mr Harry Parker. Generated Summary: unknown resource entry</a></td></tr></table><p><b>recipient</b>: <a href=\"#backboneelement_4d7c758f-55c7-41f1-961f-4ccd1ed9d036\">East Chelmsford Ambulance Service. Generated Summary: unknown resource entry</a></p><p><b>reasonCode</b>: Blood loss - urgent care require <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.2.1.3.2.4.17.414 code 'Dx009' = 'Dx009', given as 'Blood loss - urgent care require'})</span></p></div>"
+        },
+        "status": "active",
+        "intent": "proposal",
+        "subject": {
+          "reference": "urn:uuid:e228e899-f437-4927-b5c5-4786dce9dc43"
+        },
+        "priority": "urgent",
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.17.414",
+                "code": "Dx009",
+                "display": "Blood loss - urgent care require"
+              }
+            ]
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "397593002",
+              "display": "Referral by Accident and Emergency"
+            }
+          ]
+        },
+        "requester": {
+          "agent": {
+            "reference": "urn:uuid:2a1022dd-a998-41a1-9941-71a413ee9172",
+            "display": "Mr Harry Parker"
+          }
+        },
+        "recipient": [
+          {
+            "reference": "urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036",
+            "display": "East Chelmsford Ambulance Service"
+          }
+        ],
+        "serviceRequested": [
+          {
+            "coding": [
+              {
+                "code": "R2",
+                "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.17.329",
+                "display": "Ambulance Request - Serious condition Cat R2"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6200f9ee-4d77-4d0f-8da1-b0bc4db0000d",
+      "resource": {
+        "resourceType": "Location",
+        "id": "6200f9ee-4d77-4d0f-8da1-b0bc4db0000d",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6200f9ee-4d77-4d0f-8da1-b0bc4db0000d</p><p><b>status</b>: active</p><p><b>description</b>: The actual location is in the garden, round the back of the house</p><p><b>address</b>: null </p></div>"
+        },
+        "status": "active",
+        "address": {},
+        "description": "The actual location is in the garden, round the back of the house"
+      }
+    }
+  ]
+}

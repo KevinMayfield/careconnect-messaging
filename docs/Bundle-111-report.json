@@ -1,0 +1,601 @@
+{
+  "resourceType": "Bundle",
+  "id": "111-report",
+  "meta": {
+    "lastUpdated": "2015-02-12T21:00:00+00:00",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Document-Bundle-1"
+    ]
+  },
+  "identifier": {
+    "system": "https://tools.ietf.org/html/rfc4122",
+    "value": "8c12c37b-1d65-43fc-b4d3-5bf81b54d7f5"
+  },
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:926253f1-c43e-4194-81b5-8ba76c924175",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "926253f1-c43e-4194-81b5-8ba76c924175",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ITK-ECD-Composition-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 926253f1-c43e-4194-81b5-8ba76c924175</p><p><b>meta</b>: </p><p><b>identifier</b>: 926253f1-c43e-4194-81b5-8ba76c924175</p><p><b>status</b>: final</p><p><b>type</b>: National Health Service 111 Report <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '819551000000100' = '819551000000100', given as 'National Health Service 111 Report'})</span></p><p><b>encounter</b>: <a href=\"#backboneelement_9a20cb92-354a-4015-82ec-ab0252efc5b9\">Generated Summary: unknown resource entry</a></p><p><b>date</b>: 11 May 2011, 21:00:00</p><p><b>author</b>: <a href=\"#backboneelement_369d88a8-9f6b-407f-8560-6ee9d7ccc8bb\">Generated Summary: unknown resource entry</a></p><p><b>title</b>: National Health Service 111 Report</p><p><b>custodian</b>: <a href=\"#backboneelement_120633ae-1a20-4e0e-b807-b78fb59679cc\">Generated Summary: unknown resource entry</a></p></div>"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-CareSettingType-1",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "394576009",
+                  "display": "Accident & emergency"
+                }
+              ]
+            }
+          }
+        ],
+        "identifier": {
+          "system": "https://tools.ietf.org/html/rfc4122",
+          "value": "926253f1-c43e-4194-81b5-8ba76c924175"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "819551000000100",
+              "display": "National Health Service 111 Report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"
+        },
+        "encounter": {
+          "reference": "urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9"
+        },
+        "date": "2011-05-11T20:00:00+00:00",
+        "author": [
+          {
+            "reference": "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"
+          }
+        ],
+        "title": "National Health Service 111 Report",
+        "custodian": {
+          "reference": "urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc"
+        },
+        "section": [
+          {
+            "title": "NHS 111 Report",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "886791000000105",
+                  "display": "Handover details"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <div class=\"titlebar\">\n                                <div class=\"doctitle\">NHS 111 Report</div>\n                                <table class=\"titlebar\">\n                                    <tr>\n                                        <th class=\"titlebar\">Encounter Type</th>\n                                        <td class=\"titlebar\">NHS111 Encounter</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Encounter Time</th>\n                                        <td class=\"titlebar\">19-May-2011, 19:45 to 19-May-2011, 20:15</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Case Reference</th>\n                                        <td class=\"titlebar\">CASEREF1234</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Case ID</th>\n                                        <td class=\"titlebar\">CASEID123</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Encounter Disposition</th>\n                                        <td class=\"titlebar\">Go to the nearest Emergency Department within 4 hours.</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Care Setting Location</th>\n                                        <td class=\"titlebar\">Incident Location</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Care Setting Address</th>\n                                        <td class=\"titlebar\">\n                                            <p class=\"label\">Visit Address</p>\n                                            <p>2, Brancaster Road<br/>Medway<br/>ME5 FL5<br/>Follow the high street and turn left by Boots<br/>GB<br/>Great Britain<br/>+38.265789-85.623415\n                                            </p>\n                                        </td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Care Setting Type</th>\n                                        <td class=\"titlebar\">Example Care Setting</td>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"titlebar\">Responsible Party</th>\n                                        <td class=\"titlebar\">Dave Cornwell - Medical Director, Medway South Out of Hours Centre<br/></td>\n                                    </tr>\n                                </table>\n                            </div>\n                            <div id=\"participantBanner\" class=\"banner\">\n                                <table>\n                                    <tbody>\n                                        <tr>\n                                            <th class=\"sectitle\">Other participant(s) in this document</th>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                                <table>\n                                    <tr>\n                                        <th class=\"participant\">Referred To</th>\n                                    </tr>\n                                    <tr>\n                                        <th class=\"header\">Referred To Organization</th>\n                                        <td class=\"titlebar\">Medway Community Hospital</td>\n                                    </tr>\n                                </table>\n                                <table class=\"header\">\n                                    <tbody>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\">Visit Address</p>\n                                                <p>Church Street Walk in Centre<br/>4 Church Street<br/>Medway<br/>ME8 7TT\n                                                </p>\n                                            </td>\n                                            <td><span class=\"label\">Emergency Phone </span>0123456789\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table><br/></div>\n                        </div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9"
+              },
+              {
+                "reference": "urn:uuid:972c7c13-0910-43da-9a3b-b90416036269"
+              }
+            ]
+          },
+          {
+            "title": "Patient Demographics",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "886731000000109",
+                  "display": "Patient Demographics"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <div>\n                                <table>\n                                    <tbody>\n                                        <tr>\n                                            <td class=\"label\">Patient demographics</td>\n                                        </tr>\n                                        <tr>\n                                            <td class=\"label\">NHS number</td>\n                                            <td class=\"label\">Other identifier</td>\n                                        </tr>\n                                        <tr>\n                                            <td>JOE, Blogg (Mr)</td>\n                                            <td>01-Jan-1989</td>\n                                            <td>Male</td>\n                                            <td>\n                                                <span class=\"label\">Unverified - </span>9x<br/>\n                                            </td>\n                                            <td>\n                                                <span class=\"label\">Local identifier - </span>K12345<br/>\n                                            </td>\n                                        </tr>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\"> Communication Language </p>\n                                                <p>English</p>\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                                <table class=\"header\">\n                                    <tbody>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\">Home Address</p>\n                                                <p>17, County Avenue<br/>Woodtown<br/>Medway<br/>ME5 FS3 </p>\n                                            </td>\n                                            <td>\n                                                <span class=\"label\">Home Phone </span>01634775667<br/>\n                                                <span class=\"label\">Vacation/Temporary  Phone </span>01634451628<br/>\n                                                <span class=\"label\">Home Email </span>Joe.Blogg@emailfree.co.uk\n                                            </td>\n                                        </tr>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\">GP Practice</p>\n                                            </td>\n\n                                            <td>Medway Medical Practice</td>\n\n                                            <td>\n                                                <p class=\"label\">Address</p>Springer Street<br/>Medway<br/>ME5 5TY<br/>\n                                            </td>\n                                            <td>\n                                                <p>\n                                                    <span class=\"label\">Phone </span>01634111222\n                                                </p>\n                                            </td>\n                                        </tr>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\">GP Practice Code</p>V396F\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                            </div>\n                            <div id=\"informantBanner\" class=\"banner\">\n                                <table>\n                                    <tbody>\n                                        <tr>\n                                            <th class=\"header\">Informant</th>\n                                            <td>Helga Bloggs - Spouse</td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                                <table class=\"header\">\n                                    <tbody>\n                                        <tr>\n                                            <td>\n                                                <p class=\"label\">Primary Home Address</p>\n                                                <p>43 Summers Avenue<br/>Somerset Street<br/>Medway<br/>ME5 7TY\n                                                </p>\n                                            </td>\n                                            <td><span class=\"label\">Mobile Phone </span>07886554123\n                                            </td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                            </div>\n                        </div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"
+              }
+            ]
+          },
+          {
+            "title": "Consent for information sharing",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "887031000000108",
+                  "display": "Consent for information sharing"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <table>\n                            <tbody>\n                                <tr>\n                                    <th class=\"default\">Permission to view outcome</th>\n                                    <td>Permission to view obtained</td>\n                                </tr>\n                                <tr>\n                                    <th class=\"default\">Date obtained</th>\n                                    <td>19-May-2011, 20:00</td>\n                                </tr>\n                                <tr>\n                                    <th class=\"default\">Date expires</th>\n                                    <td>26-May-2011, 20:00</td>\n                                </tr>\n                            </tbody>\n                            </table>\n                        </div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce"
+              }
+            ]
+          },
+          {
+            "title": "Presenting complaints or issues",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "886891000000102",
+                  "display": "Presenting complaints or issues"
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            Patient has an insect bite.\n                        </div>"
+            }
+          },
+          {
+            "title": "Case Summary",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "887181000000106",
+                  "display": "Clinical summary "
+                }
+              ]
+            },
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <span class=\"bold\">Disposition:</span>\n                            <br/>\n                            Go to the nearest Emergency Department within 4 hours.\n                            <br/>\n                            <span class=\"bold\">Selected care service:</span>\n                            <br/>\n                            Dx009\n                            <br/>\n                            <span class=\"bold\">Pathways Assessment:</span>\n                            <br/>\n                            An injury or other health problem was described.\n                            <br/>The individual was described as breathing and conscious.\n                            <br/>Loss of at least a mugful of blood in the last 30 minutes was not described.\n                            <br/>An illness or other health problem was described. - Insect Bite\n                            <br/>Fighting for breath was not described.\n                            <br/>A heart attack, chest/upper back pain, recent probable stroke, recent fit/seizure\n                            or suicide attempt was not described as the main call reason.\n                            <br/>New confusion, a diabetic hypo, a probable allergic reaction or successful resuscitation\n                            was not described as being the main call reason.\n                            <br/>The individual was described as being warm to touch.\n                            <br/>An insect or spider bite or sting was described. - Tick Bite\n                            <br/>A sting/bite occurring within the last hour was not described.\n                            <br/>10 or more stings were not described.\n                            <br/>Nausea or vomiting since the sting was not described.\n                            <br/>A sting involving the eyes or mouth was not described.\n                            <br/>A fever was not described.\n                            <br/>An insect still attached to the skin was described.\n                            <br/>A tick bite was described.\n                            <br/>\n\n                            <span class=\"bold\">Advice given:</span>\n                            <br/>\n                            Remove any jewellery or tight clothing from the area.\n                            <br/>Antihistamine medication and creams help reduce swelling and itching. They can be\n                            bought from pharmacies. Talk to the pharmacist for advice. Follow the instructions\n                            in the pack.\n                            <br/>Unless advised not to, or they have already been given, paracetamol or ibuprofen can\n                            be used to relieve pain. Follow the instructions in the pack. If in doubt ask a pharmacist.\n\n                            <br/>\n                            <br/>\n                            This may have a structured record of the triage pathawy but this is not included\n                        </div>"
+            }
+          },
+          {
+            "title": "Patient Special Notes",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "886741000000100",
+                  "display": "Special requirements"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            Patient has history of violence towards health care professionals\n                        </div>"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9a20cb92-354a-4015-82ec-ab0252efc5b9",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "9a20cb92-354a-4015-82ec-ab0252efc5b9",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 9a20cb92-354a-4015-82ec-ab0252efc5b9</p><p><b>identifier</b>: CASEID123, CASEREF1234</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://hl7.org/fhir/v3/ActCode code AMB = 'ambulatory', stated as 'ambulatory')</p><p><b>type</b>: Telephone triage encounter <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '401267002' = 'Telephone triage encounter (procedure)', given as 'Telephone triage encounter'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_6438cfe6-8012-4ec4-b83d-a680f8a41674\">Generated Summary: unknown resource entry</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Individual</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_369d88a8-9f6b-407f-8560-6ee9d7ccc8bb\">Mary Jones. Generated Summary: unknown resource entry</a></td></tr></table><p><b>period</b>: 19 May 2011, 20:45:00 --&gt; 19 May 2011, 21:15:00</p><h3>Hospitalizations</h3><table class=\"grid\"><tr><td>-</td><td><b>DischargeDisposition</b></td></tr><tr><td>*</td><td>Go to the nearest Emergency Department within 4 hours. <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1 code 'Dx009' = 'Dx009', given as 'Go to the nearest Emergency Department within 4 hours.'})</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td>-</td><td><b>Location</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_060b292b-a861-455d-b5e6-85f852dd32fc\">Generated Summary: unknown resource entry</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"#backboneelement_369d88a8-9f6b-407f-8560-6ee9d7ccc8bb\">Medway South Out of Hours Centre. Generated Summary: unknown resource entry</a></p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.medway.nhs.uk/case-id",
+            "value": "CASEID123"
+          },
+          {
+            "system": "https://fhir.medway.nhs.uk/case-reference",
+            "value": "CASEREF1234"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://hl7.org/fhir/v3/ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb",
+              "display": "Mary Jones"
+            }
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "401267002",
+                "display": "Telephone triage encounter"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"
+        },
+        "period": {
+          "start": "2011-05-19T19:45:00+00:00",
+          "end": "2011-05-19T20:15:00+00:00"
+        },
+        "location": [
+          {
+            "location": {
+              "reference": "urn:uuid:060b292b-a861-455d-b5e6-85f852dd32fc"
+            }
+          }
+        ],
+        "hospitalization": {
+          "dischargeDisposition": {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1",
+                "code": "Dx009",
+                "display": "Go to the nearest Emergency Department within 4 hours."
+              }
+            ]
+          }
+        },
+        "serviceProvider": {
+          "reference": "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb",
+          "display": "Medway South Out of Hours Centre"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "6438cfe6-8012-4ec4-b83d-a680f8a41674",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 6438cfe6-8012-4ec4-b83d-a680f8a41674</p><p><b>meta</b>: </p><p><b>identifier</b>: 993254128</p><p><b>name</b>: Joe Blogg (OFFICIAL)</p><p><b>telecom</b>: ph: 01634775667(HOME), Joe.Blogg@emailfree.co.uk(HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1989-01-01</p><p><b>address</b>: 17, County Way Woodtown Medway ME5 FS3 </p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td><td><b>Gender</b></td></tr><tr><td>*</td><td>Helga Blogg </td><td>ph: 07886554123</td><td>43 Summers Avenue Somerset Street Medway ME5 7TY </td><td>female</td></tr></table><p><b>managingOrganization</b>: <a href=\"#backboneelement_a0ff2363-f00d-4542-9f6a-624e71513ebf\">Thames Medical Practice. Generated Summary: unknown resource entry</a></p></div>"
+        },
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1",
+                      "code": "01",
+                      "display": "Number present and verified"
+                    }
+                  ]
+                }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "993254128"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Blogg",
+            "given": [
+              "Joe"
+            ],
+            "prefix": [
+              "Mr"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1989-01-01",
+        "telecom": [
+          {
+            "use": "home",
+            "system": "phone",
+            "value": "01634775667"
+          },
+          {
+            "use": "home",
+            "system": "email",
+            "value": "Joe.Blogg@emailfree.co.uk"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "17, County Way",
+              "Woodtown"
+            ],
+            "city": "Medway",
+            "postalCode": "ME5 FS3"
+          }
+        ],
+        "contact": [
+          {
+            "name": {
+              "use": "usual",
+              "family": "Blogg",
+              "given": [
+                "Helga"
+              ]
+            },
+            "gender": "female",
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "07886554123"
+              }
+            ],
+            "address": {
+              "line": [
+                "43 Summers Avenue",
+                "Somerset Street"
+              ],
+              "city": "Medway",
+              "postalCode": "ME5 7TY"
+            }
+          }
+        ],
+        "managingOrganization": {
+          "reference": "urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf",
+          "display": "Thames Medical Practice"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "369d88a8-9f6b-407f-8560-6ee9d7ccc8bb",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 369d88a8-9f6b-407f-8560-6ee9d7ccc8bb</p><p><b>meta</b>: </p><p><b>name</b>: Mary Jones </p></div>"
+        },
+        "name": [
+          {
+            "family": "Jones",
+            "given": [
+              "Mary"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d9174bf6-0662-4ae1-b39a-f9fec278835d",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "d9174bf6-0662-4ae1-b39a-f9fec278835d",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: d9174bf6-0662-4ae1-b39a-f9fec278835d</p><p><b>meta</b>: </p><p><b>practitioner</b>: <a href=\"#backboneelement_369d88a8-9f6b-407f-8560-6ee9d7ccc8bb\">Generated Summary: unknown resource entry</a></p><p><b>organization</b>: <a href=\"#backboneelement_120633ae-1a20-4e0e-b807-b78fb59679cc\">Medway NHS Foundation Trust. Generated Summary: unknown resource entry</a></p><p><b>code</b>: Nurse Triage Practitioner <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.2.1.3.2.4.17.196 code 'T1' = 'T1', given as 'Nurse Triage Practitioner'})</span></p></div>"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.17.196",
+                "code": "T1",
+                "display": "Nurse Triage Practitioner"
+              }
+            ]
+          }
+        ],
+        "practitioner": {
+          "reference": "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb"
+        },
+        "organization": {
+          "reference": "urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc",
+          "display": "Medway NHS Foundation Trust"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:120633ae-1a20-4e0e-b807-b78fb59679cc",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "120633ae-1a20-4e0e-b807-b78fb59679cc",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 120633ae-1a20-4e0e-b807-b78fb59679cc</p><p><b>meta</b>: </p><p><b>identifier</b>: K12345</p><p><b>name</b>: Medway NHS Foundation Trust</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "K12345"
+          }
+        ],
+        "name": "Medway NHS Foundation Trust"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "4d7c758f-55c7-41f1-961f-4ccd1ed9d036",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 4d7c758f-55c7-41f1-961f-4ccd1ed9d036</p><p><b>meta</b>: </p><p><b>identifier</b>: EM396</p><p><b>name</b>: Medway Kent Out of Hours Clinic</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "EM396"
+          }
+        ],
+        "name": "Medway Kent Out of Hours Clinic"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "a0ff2363-f00d-4542-9f6a-624e71513ebf",
+        "meta": {
+          "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: a0ff2363-f00d-4542-9f6a-624e71513ebf</p><p><b>meta</b>: </p><p><b>identifier</b>: PRA123</p><p><b>name</b>: Thames Medical Practice</p><p><b>address</b>: null null </p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "PRA123"
+          }
+        ],
+        "name": "Thames Medical Practice",
+        "address": [
+          {}
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce",
+      "resource": {
+        "resourceType": "Consent",
+        "id": "eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: eb3f9a3c-cd4d-44c1-a843-d3614d47c9ce</p><p><b>status</b>: active</p><p><b>patient</b>: <a href=\"#backboneelement_6438cfe6-8012-4ec4-b83d-a680f8a41674\">Generated Summary: unknown resource entry</a></p><p><b>purpose</b>: Consent given for electronic record sharing (Details: SNOMED CT code 425691002 = 'Consent given for electronic record sharing (finding)', stated as 'Consent given for electronic record sharing')</p></div>"
+        },
+        "status": "active",
+        "patient": {
+          "reference": "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"
+        },
+        "purpose": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "425691002",
+            "display": "Consent given for electronic record sharing"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:972c7c13-0910-43da-9a3b-b90416036269",
+      "resource": {
+        "resourceType": "ReferralRequest",
+        "id": "972c7c13-0910-43da-9a3b-b90416036269",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 972c7c13-0910-43da-9a3b-b90416036269</p><p><b>status</b>: active</p><p><b>intent</b>: proposal</p><p><b>type</b>: Referral by Accident and Emergency <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '397593002' = 'Referral by emergency medical admissions unit (procedure)', given as 'Referral by Accident and Emergency'})</span></p><p><b>priority</b>: urgent</p><p><b>serviceRequested</b>: Patient Handover <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '807131000000108' = '807131000000108', given as 'Patient Handover'})</span></p><p><b>subject</b>: <a href=\"#backboneelement_6438cfe6-8012-4ec4-b83d-a680f8a41674\">Generated Summary: unknown resource entry</a></p><h3>Requesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Agent</b></td></tr><tr><td>*</td><td><a href=\"#backboneelement_369d88a8-9f6b-407f-8560-6ee9d7ccc8bb\">Mary Jones. Generated Summary: unknown resource entry</a></td></tr></table><p><b>recipient</b>: </p><ul><li><a href=\"#backboneelement_4d7c758f-55c7-41f1-961f-4ccd1ed9d036\">Medway NHS Foundation Trust. Generated Summary: unknown resource entry</a></li><li><a href=\"#backboneelement_a0ff2363-f00d-4542-9f6a-624e71513ebf\">Thames Medical Practice. Generated Summary: unknown resource entry</a></li></ul><p><b>reasonCode</b>: Go to the nearest Emergency Department within 4 hours. <span style=\"background: LightGoldenRodYellow\">(Details : {https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1 code 'Dx009' = 'Dx009', given as 'Go to the nearest Emergency Department within 4 hours.'})</span></p></div>"
+        },
+        "status": "active",
+        "intent": "proposal",
+        "subject": {
+          "reference": "urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674"
+        },
+        "priority": "urgent",
+        "type": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "397593002",
+              "display": "Referral by Accident and Emergency"
+            }
+          ]
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-uec-disposition-1",
+                "code": "Dx009",
+                "display": "Go to the nearest Emergency Department within 4 hours."
+              }
+            ]
+          }
+        ],
+        "requester": {
+          "agent": {
+            "reference": "urn:uuid:369d88a8-9f6b-407f-8560-6ee9d7ccc8bb",
+            "display": "Mary Jones"
+          }
+        },
+        "recipient": [
+          {
+            "reference": "urn:uuid:4d7c758f-55c7-41f1-961f-4ccd1ed9d036",
+            "display": "Medway NHS Foundation Trust"
+          },
+          {
+            "reference": "urn:uuid:a0ff2363-f00d-4542-9f6a-624e71513ebf",
+            "display": "Thames Medical Practice"
+          }
+        ],
+        "serviceRequested": [
+          {
+            "coding": [
+              {
+                "code": "807131000000108",
+                "system": "http://snomed.info/sct",
+                "display": "Patient Handover"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:060b292b-a861-455d-b5e6-85f852dd32fc",
+      "resource": {
+        "resourceType": "Location",
+        "id": "060b292b-a861-455d-b5e6-85f852dd32fc",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 060b292b-a861-455d-b5e6-85f852dd32fc</p><p><b>status</b>: active</p><p><b>description</b>: Follow the high street and turn left by Boots</p><p><b>address</b>: null </p><h3>Positions</h3><table class=\"grid\"><tr><td>-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td>*</td><td/></tr></table><p><b style=\"color: maroon\">Exception generating Narrative: null</b></p></div>"
+        },
+        "status": "active",
+        "address": {},
+        "description": "Follow the high street and turn left by Boots",
+        "position": {}
+      }
+    }
+  ]
+}
