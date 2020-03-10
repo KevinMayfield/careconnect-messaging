@@ -383,7 +383,8 @@
                             This may have a structured record of the triage pathawy but this is not included
                         </div>
                     </text>
-                  <!--  <entry>
+                    <!--
+                   <entry>
                         <reference value="urn:uuid:a46067b3-772e-4998-a86f-8154d2fd2298"/>
                     </entry> -->
                 </section>

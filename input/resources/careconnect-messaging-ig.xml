@@ -155,6 +155,15 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Questionnaire/covid-19-public"></reference>
+      </reference>
+      <name value="COVID-19 Questionnaire Mock up"></name>
+      <description value="Loosely based on NHS111 Online questionnaire"></description>
+      <exampleBoolean value="true"/>
+      <groupingId value="uk-examples"></groupingId>
+    </resource>
+    <resource>
+      <reference>
         <reference value="MessageDefinition/patient-referral"/>
       </reference>
       <name value="Patient Referral"/>

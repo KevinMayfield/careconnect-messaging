@@ -6,7 +6,7 @@
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 819551000000100 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 819551000000100 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -46,7 +46,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 807131000000108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 807131000000108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -96,7 +96,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -146,7 +146,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -156,7 +156,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 828801000000101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 828801000000101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -208,7 +208,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 819551000000100 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 819551000000100 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -230,7 +230,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 886791000000105 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 886791000000105 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -241,7 +241,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 886731000000109 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 886731000000109 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -252,7 +252,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 887031000000108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 887031000000108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -263,7 +263,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 886891000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 886891000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -274,7 +274,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 887181000000106 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 887181000000106 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -285,7 +285,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 886741000000100 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 886741000000100 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -341,7 +341,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 807131000000108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 807131000000108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -396,7 +396,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 1104441000000107 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -451,7 +451,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 1091811000000102 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -462,7 +462,7 @@ v: {
 v: {
   "display" : "",
   "severity" : "error",
-  "error" : "unable to find code 828801000000101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20190731)"
+  "error" : "unable to find code 828801000000101 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20200131)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {

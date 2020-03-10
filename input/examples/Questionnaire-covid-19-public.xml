@@ -1,0 +1,73 @@
+<Questionnaire xmlns="http://hl7.org/fhir">
+    <id value="covid-19-public" />
+    <url value="https://fhir.nhs.uk/Questionnaire/covid-19-public"/>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Questionnaire"/>
+        <value value="covid-19-public"/>
+    </identifier>
+    <name value="NHS 111 Online COVID-19"/>
+    <title value="NHS 111 Online COVID-19"/>
+    <status value="draft"/>
+    <subjectType value="Patient"/>
+    <description value="Mock up of NHS 111 Online questionnaire as a FHIR Resource"/>
+    <item>
+        <linkId value="covid-19-1"/>
+        <text value="Have you been to or travelled through any of these areas in last 14 days?"/>
+        <type value="open-choice"/>
+        <option>
+            <valueString value="Hubei province, China" />
+        </option>
+        <option>
+            <valueString value="locked down areas in northern Italy" />
+        </option>
+        <option>
+            <valueString value="H10 Costa Adeje Palace Hotel (Tenerife)" />
+        </option>
+    </item>
+    <item>
+        <linkId value="covid-19-2"/>
+        <text value="Have you been to or travelled through any of these areas in last 14 days?"/>
+        <type value="open-choice"/>
+        <enableWhen>
+            <question value="covid-19-1"></question>
+            <hasAnswer value="false"></hasAnswer>
+        </enableWhen>
+        <option>
+            <valueString value="Italy" />
+        </option>
+        <option>
+            <valueString value="Daegu or Cheongdo in South Korea" />
+        </option>
+        <option>
+            <valueString value="Iran" />
+        </option>
+        <option>
+            <valueString value="Cambodia, Laos, Myanmar (Burma) or Vietnam" />
+        </option>
+        <option>
+            <valueString value="China, Hong Kong, Macau or Taiwan" />
+        </option>
+        <option>
+            <valueString value="Japan, Malaysia, South Korea, Singapore or Thailand" />
+        </option>
+    </item>
+    <item>
+        <linkId value="covid-19-3"/>
+        <text value="Has someone with a confirmed case of coronavirus been in close contact with you?"/>
+        <type value="boolean"/>
+    </item>
+    <item>
+        <linkId value="covid-19-4"/>
+        <text value="Do you have any of these?"/>
+        <type value="open-choice"/>
+        <option>
+            <valueString value="High Temperature" />
+        </option>
+        <option>
+            <valueString value="Cough" />
+        </option>
+        <option>
+            <valueString value="Shortness of Breath" />
+        </option>
+    </item>
+</Questionnaire>

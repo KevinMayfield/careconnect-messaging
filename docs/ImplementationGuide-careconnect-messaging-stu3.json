@@ -10,7 +10,7 @@
   "name": "Care Connect Messaging",
   "status": "draft",
   "experimental": false,
-  "date": "2020-02-29T07:15:42+00:00",
+  "date": "2020-03-10T11:29:01+00:00",
   "publisher": "mayfield-is.co.uk",
   "contact": [
     {
@@ -254,6 +254,24 @@
           "description": "ORM_O01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information",
           "sourceReference": {
             "reference": "Bundle/ormo01"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+              "valueString": "Questionnaire"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "Questionnaire-covid-19-public.html"
+            }
+          ],
+          "example": true,
+          "name": "COVID-19 Questionnaire Mock up",
+          "description": "Loosely based on NHS111 Online questionnaire",
+          "sourceReference": {
+            "reference": "Questionnaire/covid-19-public"
           }
         }
       ]

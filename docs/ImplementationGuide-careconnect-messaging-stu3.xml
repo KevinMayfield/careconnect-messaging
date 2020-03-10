@@ -11,7 +11,7 @@
   <name value="Care Connect Messaging"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-02-29T07:15:42+00:00"/>
+  <date value="2020-03-10T11:29:01+00:00"/>
   <publisher value="mayfield-is.co.uk"/>
   <contact>
     <telecom>
@@ -196,6 +196,20 @@
       <description value="ORM_O01 Pathology FHIR Message - Unsolicited Transmission Of Requested Information"/>
       <sourceReference>
         <reference value="Bundle/ormo01"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Questionnaire-covid-19-public.html"/>
+      </extension>
+      <example value="true"/>
+      <name value="COVID-19 Questionnaire Mock up"/>
+      <description value="Loosely based on NHS111 Online questionnaire"/>
+      <sourceReference>
+        <reference value="Questionnaire/covid-19-public"/>
       </sourceReference>
     </resource>
   </package>
