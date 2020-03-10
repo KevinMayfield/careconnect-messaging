@@ -5,12 +5,88 @@
         <system value="https://fhir.nhs.uk/Questionnaire"/>
         <value value="covid-19-public"/>
     </identifier>
-    <name value="NHS 111 Online COVID-19"/>
-    <title value="NHS 111 Online COVID-19"/>
+    <name value="COVID-19 Assessment"/>
+    <title value="COVID-19 Assessment"/>
     <status value="draft"/>
+    <description value="To record the information required to evaluate the potential risk of Covid-19 infection, as part of professional screening or self-assessment. This is heavily based on the current NHS-111 UK self-assessment app at https://111.nhs.uk/covid-19 and a similar risk assessment app developed for pre-hospital admission by DIPS.no. The exact risk factors are subject to continual update as the disease progresses."/>
     <subjectType value="Patient"/>
-    <description value="Mock up of NHS 111 Online questionnaire as a FHIR Resource"/>
     <item>
+        <linkId value="symptom"/>
+        <type value="group"/>
+        <repeats value="true"/>
+        <item>
+            <linkId value="sympton-type"/>
+            <text value="Symptom"/>
+            <type value="open-choice"/>
+            <option>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="315642008"/>
+                    <display value="Influenza-like symptoms"/>
+                </valueCoding>
+            </option>
+            <option>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="49727002"/>
+                    <display value="Cough"/>
+                </valueCoding>
+            </option>
+            <option>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="386661006"/>
+                    <display value="Fever"/>
+                </valueCoding>
+            </option>
+            <option>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="230145002"/>
+                    <display value="Difficulty breathing"/>
+                </valueCoding>
+            </option>
+            <option>
+                <valueCoding>
+                    <system value="http://snomed.info/sct"/>
+                    <code value="162397003"/>
+                    <display value="Pain in throat"/>
+                </valueCoding>
+            </option>
+        </item>
+        <item>
+            <linkId value="sympton-date"/>
+            <text value="onset"/>
+            <type value="date"/>
+        </item>
+    </item>
+    <item>
+        <linkId value="temp" />
+        <text value="Body Temp"></text>
+        <type value="group"/>
+        <repeats value="true"/>
+        <item>
+            <linkId value="tempcel"></linkId>
+            <text value="Temperature (0-100 Celsius)"/>
+            <type value="integer"></type>
+        </item>
+    </item>
+    <item>
+        <linkId value="travel" />
+        <text value="Travel trip history"></text>
+        <type value="group"/>
+        <item>
+            <linkId value="recent"></linkId>
+            <text value="Recent Travel"/>
+            <type value="date"></type>
+        </item>
+        <item>
+            <linkId value="dateofreturn"></linkId>
+            <text value="Date of Return"/>
+            <type value="boolean"></type>
+        </item>
+    </item>
+  <!--  <item>
         <linkId value="covid-19-1"/>
         <text value="Have you been to or travelled through any of these areas in last 14 days?"/>
         <type value="open-choice"/>
@@ -69,5 +145,5 @@
         <option>
             <valueString value="Shortness of Breath" />
         </option>
-    </item>
+    </item> -->
 </Questionnaire>

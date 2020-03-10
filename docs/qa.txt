@@ -1,16 +1,16 @@
 ﻿Care Connect Messaging : Validation Results
 =========================================
 
-err = 394, warn = 50, info = 234
+err = 394, warn = 54, info = 234
 IG Publisher Version: v1.0.70-SNAPSHOT
-Generated Tue Mar 10 11:29:59 GMT 2020. FHIR version 3.0.2 for careconnect.messaging.stu3#3.0.0 (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
+Generated Tue Mar 10 18:22:47 GMT 2020. FHIR version 3.0.2 for careconnect.messaging.stu3#3.0.0 (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
 
  Build Errors : 165 / 3
- /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-111report : 58 / 22
+ /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-111report : 58 / 23
  /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta02 : 5 / 8
  /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta04 : 4 / 7
  /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-adta05 : 4 / 7
- /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-ambulance-request : 50 / 22
+ /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-ambulance-request : 50 / 23
  /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-admit : 4 / 7
  /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-admit-transaction : 2 / 9
  /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/input/examples/Bundle-notification-discharge : 4 / 8
@@ -182,9 +182,9 @@ ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/outp
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/MessageDefinition-response-patient-referral.ttl.html#/html/body/div/div/div/p/a at Line 232, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/MessageDefinition-response-patient-referral.xml.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Questionnaire-covid-19-public.html#/html/body/div/div/div/p/a at Line 186, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Questionnaire-covid-19-public.json.html#/html/body/div/div/div/p/a at Line 285, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Questionnaire-covid-19-public.ttl.html#/html/body/div/div/div/p/a at Line 275, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
-ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Questionnaire-covid-19-public.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Questionnaire-covid-19-public.json.html#/html/body/div/div/div/p/a at Line 301, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Questionnaire-covid-19-public.ttl.html#/html/body/div/div/div/p/a at Line 295, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
+ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/Questionnaire-covid-19-public.xml.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/adt.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/artifacts.html#/html/body/div/div/div/p/a at Line 388, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
 ERROR: /Users/kevinmayfield/Development/kevinmayfield/careconnect-messaging/output/changes.html#/html/body/div/div/div/p/a at Line 179, column 28: The link 'kevin.mayfield@mayfield-is.co.uk' for "mayfield-is.co.uk" cannot be resolved
@@ -257,6 +257,7 @@ ERROR: Bundle/111-report: Bundle.entry[7].resource.address[0].postalCode: ele-1:
 WARNING: Bundle/111-report: Bundle.entry[7].resource.meta.profile[0]: Profile reference "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" could not be resolved, so has not been checked
 ERROR: Bundle/111-report: Bundle.entry[8].resource: ppc-1: Either a Policy or PolicyRule [policy.exists() or policyRule.exists()]
 INFORMATION: Bundle/111-report: Bundle.entry[8].resource.patient: Details for urn:uuid:6438cfe6-8012-4ec4-b83d-a680f8a41674 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+WARNING: Bundle/111-report: Bundle.entry[8].resource.purpose[0]: The Coding provided is not in the value set http://hl7.org/fhir/ValueSet/v3-PurposeOfUse, and a code should come from this value set unless it has no suitable code.  (error message = The code provided (http://snomed.info/sct#425691002) is not  valid in the value set PurposeOfUse)
 ERROR: Bundle/111-report: Bundle.entry[9].resource.priority: As specified by profile http://hl7.org/fhir/StructureDefinition/ReferralRequest, Element "priority" is out of order
 ERROR: Bundle/111-report: Bundle.entry[9].resource.type: As specified by profile http://hl7.org/fhir/StructureDefinition/ReferralRequest, Element "type" is out of order
 ERROR: Bundle/111-report: Bundle.entry[9].resource.requester: As specified by profile http://hl7.org/fhir/StructureDefinition/ReferralRequest, Element "requester" is out of order
@@ -374,6 +375,7 @@ ERROR: Bundle/ambulance-request: Bundle.entry[7].resource.address[0].postalCode:
 WARNING: Bundle/ambulance-request: Bundle.entry[7].resource.meta.profile[0]: Profile reference "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1" could not be resolved, so has not been checked
 ERROR: Bundle/ambulance-request: Bundle.entry[8].resource: ppc-1: Either a Policy or PolicyRule [policy.exists() or policyRule.exists()]
 INFORMATION: Bundle/ambulance-request: Bundle.entry[8].resource.patient: Details for urn:uuid:e228e899-f437-4927-b5c5-4786dce9dc43 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+WARNING: Bundle/ambulance-request: Bundle.entry[8].resource.purpose[0]: The Coding provided is not in the value set http://hl7.org/fhir/ValueSet/v3-PurposeOfUse, and a code should come from this value set unless it has no suitable code.  (error message = The code provided (http://snomed.info/sct#425691002) is not  valid in the value set PurposeOfUse)
 ERROR: Bundle/ambulance-request: Bundle.entry[9].resource.priority: As specified by profile http://hl7.org/fhir/StructureDefinition/ReferralRequest, Element "priority" is out of order
 ERROR: Bundle/ambulance-request: Bundle.entry[9].resource.type: As specified by profile http://hl7.org/fhir/StructureDefinition/ReferralRequest, Element "type" is out of order
 ERROR: Bundle/ambulance-request: Bundle.entry[9].resource.serviceRequested[0]: As specified by profile http://hl7.org/fhir/StructureDefinition/ReferralRequest, Element "serviceRequested" is out of order
