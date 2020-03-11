@@ -68,7 +68,7 @@
         <item>
             <linkId value="tempcel"></linkId>
             <text value="Temperature (0-100 Celsius)"/>
-            <type value="integer"></type>
+            <type value="quantity"></type>
         </item>
     </item>
     <item>
